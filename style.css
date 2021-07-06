@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: monospace;
+  color: #fff;
+}
+
+body{
+  font-family: monospace;
+  
+  background-image: linear-gradient(to right,  #42455a, rgba(0, 0, 0, 0.973));
+  /* background-image: linear-gradient(to right,  #42455a, #5f1782); */
+}
+
+
+#nav-bar{
+  position: sticky;
+  top:0;
+  z-index: 10;
+  
+  
+}
+
+.navbar{
+  background-image: linear-gradient(to right,  hsl(0, 0%, 75%), rgba(230, 226, 226, 0.973));
+  /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
+}
+
+.navbar-nav li
+{
+  padding: 0 10px;
+  
+}
+
+.navbar nav li a
+{
+  color:rgb(255, 255, 255);
+  font-weight: 600
+  
+
+}
+
+.promo-title
+{
+  font-size: 40px;
+  color: #fff;
+  margin-top: 100px;
+  font-family: Chalkduster, fantasy;
+  font-weight: bold;
+ 
+  
+
+}
+
+.btnSQL
+{
+background-color: #1c87c9;
+border: none;
+        color: rgb(7, 11, 68);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 1px;
+        cursor: pointer;
+        box-shadow: 5px 10px;
+}
+
+
+.btn2 
+{
+background-color: rgb(115, 255, 0);
+border: none;
+        color: rgb(22, 75, 11);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 1px;
+        cursor: pointer;
+        box-shadow: 5px 10px;
+}
+
+.card{
+  background-color: rgb(0, 0, 0);
+  margin: 2px 1px;
+  
+
+}
+
+.btnPy
+{
+background-color: rgb(115, 255, 0);
+border: none;
+        color: rgb(22, 75, 11);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 1px;
+        cursor: pointer;
+        box-shadow: 5px 10px;
+}
+
+.btnJava
+{
+background-color: rgb(132, 0, 255);
+border: none;
+        color: rgb(72, 18, 90);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 1px 1px;
+        cursor: pointer;
+       box-shadow: 5px 10px;
+}
+
+
+.footerbar{
+  
+  background-image: linear-gradient(to right,  hsl(0, 0%, 75%), rgba(230, 226, 226, 0.973));
+  /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
+}
+
+#footer-bar{
+  position: sticky;
+  bottom:0;
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
