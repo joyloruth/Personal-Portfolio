@@ -147,14 +147,19 @@ border: none;
 
 .footerbar{
   
-  background-image: linear-gradient(to right,  hsl(0, 0%, 75%), rgba(230, 226, 226, 0.973));
+  background-image: linear-gradient(to right,  #373a4b, black);
   /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
+  padding-left: 10px;
+  font-family: monospace;
+  font-size: 8px;
+  
 }
 
 #footer-bar
 {
   position: sticky;
   bottom:0;
+  
 }
 
 
