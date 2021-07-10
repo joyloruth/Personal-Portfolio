@@ -14,8 +14,8 @@ body {
   padding-top:10em;
 }
 .typewrite{
- font-family: "audiowide";
- color:rgb(196, 216, 19);
+ font-family: monospace;
+ color:rgb(255, 255, 255);
  
 }
 
@@ -301,9 +301,12 @@ body
 
 .btnSQL
 {
-  background-color: #1c87c9;
+  /*background-color: #1c87c9;
   border: none;
-  color: rgb(7, 11, 68);
+  color: rgb(7, 11, 68);*/
+  background-color: rgb(132, 0, 255);
+  border: none;
+   color: rgb(72, 18, 90);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
@@ -318,7 +321,7 @@ body
 
 .btnHTML
 {
-  background-color: #fa6400;
+  background-color: #eb4403;
   border: none;
   color: rgb(85, 32, 7);
   padding: 5px 5px;
@@ -426,17 +429,20 @@ body
 /*////////////////////////////FOOTER//////////////////////////*/
 .footerbar
 {
-  background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));
+  /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));*/
   padding-left: 10px;
+  background-image: linear-gradient(to right,  #01101f,#02203c);
   font-family: 'Times New Roman', Times, serif;
   font-size: 8px;
    display: inline-block;
+   color: white;
 }
 
 #footer-bar
 {
-  position: sticky;
+  
   bottom:0;
+  color: white;
 }
 
 
