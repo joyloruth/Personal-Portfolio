@@ -7,6 +7,18 @@
   color: #fff;
 }*/
 
+body {
+  background-color:#ce3635;
+  text-align: left;
+  color:#fff;
+  padding-top:10em;
+}
+.typewrite{
+ font-family: "audiowide";
+ color:rgb(196, 216, 19);
+ 
+}
+
 
 /*////////////////////////////NAVIGATION BAR//////////////////////////////*/
 #nav-bar
@@ -74,6 +86,10 @@ body
   
 }
 
+.portfolio{
+  margin-right: auto;
+}
+
 
 
 
@@ -85,6 +101,7 @@ body
   padding-top: 20px;
   color:#ffffff;
   font-family: monospace;
+
 }
 
 .demo
@@ -93,12 +110,27 @@ body
   font-family: monospace;
 }
 
+.min{
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.637);
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: outset;
+  border-color: rgb(81, 81, 83);
+  margin-top: 10px;
+  box-shadow: 25px 25px 3px rgba(39, 38, 38, 0.719);
+  
+  
+}
 /*////////////////////////////PORTFOLIO//////////////////////////////////////////*/
 .card
 {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.637);
   border-radius: 3px;
-  margin: 10px 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
   box-shadow: 30px 30px 10px rgb(39, 38, 38);
   border-style: outset;
   border-color: rgb(103, 103, 109)
@@ -114,7 +146,7 @@ body
 
 .card-text
 {
-  color:rgba(254, 254, 255, 0.719);
+  color:rgb(243, 248, 244);
   font-family: monospace;
 }
 
@@ -218,9 +250,9 @@ body
 
 .btnBlack
 {
-  background-color: rgb(80, 78, 78);
+  background-color: rgb(155, 155, 155);
   border: none;
-  color: white;
+  color: rgb(51, 50, 50);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
@@ -230,6 +262,7 @@ body
   cursor: pointer;
   border-radius: 3px;
   font-family: monospace;
+  box-shadow: 5px 5px;
 }
 
 .btnBoot
@@ -365,7 +398,7 @@ body
   cursor: pointer;
   box-shadow: 2px 2px;
   font-family: monospace;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 
@@ -385,6 +418,8 @@ body
   padding-top: 20px;
   color:#02203c;
   font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
