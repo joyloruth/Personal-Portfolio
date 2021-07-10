@@ -13,47 +13,33 @@
   </head>
 
   <body>
-<!------------------ NAVIGATION BAR-----------------------
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="">JOY LORUTH</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse nav" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">ABOUT ME<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">CONTACT ME</a>
-      </li>
-     
-    </ul>
-  </div>
-</nav> -->
+<!------------------ NAVIGATION BAR----------------------->>
+  
 
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark navbar fixed-top ">
    <a class="navbar-brand" href="joyloruth.com">
     <img src="logo.png" alt="Logo" style="width:300px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+ 
+
+
   <div class="collapse navbar-collapse nav" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">ABOUT ME<span class="sr-only">(current)</span></a>
+         <a class="navbar-brand" href="#">
+          <img src="email.png" width="30" height="20" class="table-row" alt=""> joy@joyloruth.com</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+      <li class="nav-item active">
+         <a class="navbar-brand" href="https://docs.google.com/document/d/1AiBrG9Hdd_Y7tcRkxN0RmF1M-UYDruREnDwQl0C0yoM/edit?usp=sharing">
+          <img src="resume.png" width="30" height="20" class="table-row" alt=""> _myResume</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">CONTACT ME</a>
+      <li class="nav-item ">
+         <a class="navbar-brand" href="https://github.com/joyloruth">
+          <img src="github.png" width="30" height="20" class="table-row" alt=""> _gitHub</a>
       </li>
-     
     </ul>
   </div>
   
@@ -66,25 +52,12 @@
 <div class="row">
 <div class="col-md-6">
 <p class="promo-title"> _SOFTWARE DEVELOPER </p>
-
-
-<p>Hello, my name is Joy and I am a software developer. 
-  <li>Java</li>
-  <li>SQL</li>
-  <li>Hibernate</li>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>C#</li>
-  <li>Thymeleaf</li>
-  <li>Bootstrap</li>
-  </b>
-<p>  </p>
-
+<button onclick="typeWriter()">Click me</button>
+<p>Hello, my name is Joy and I am a software developer. </p>
+<p id="demo"></p>
 
 <a class="btnOrange btn-primary btn-sm" href="portfolio.html">View Recent Projects</a>
-<!--<button class="btn" type="submit">Button</button> -->
 <a class="btnGreen btn-primary btn-sm" href="https://github.com/joyloruth">View My Github Page</a>
-
 </div>
 
 
@@ -98,24 +71,188 @@
 </div>
 </container>
 
+<br></br>
   
+<!--------//////////////////////////PORTFOLIO//////////////////////////////--------------->
 
-<!------------------ JSS---------------------------------->    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<section id ="portfolio">
+
+
+<center><p class="port-title">MY PORTFOLIO</p></center>
+
+<!------------------ product manager----------------------->
+  <div class="col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <a class="btnJava btn-sm"     href="">java</a>
+        <a class="btnSQL btn-sm"      href="">mysql</a>
+        <a class="btnBlack btn-sm"    href="">hibernate</a>
+        <a class="btnBlack btn-sm"    href="">thymeleaf</a>
+        <a class="btnBlack btn-sm"    href="">bootstrap</a>
+        <a class="btnHTML btn-sm"     href="">html</a>
+        <a class="btnCSS btn-sm"      href="">css</a>
     
-<script src="script.js">
+        <h4 class="card-title"> Full Stack Spring API Product Manager </h4>
+        <p class="card-text">Spring MVC Web project that include Thymeleaf, MySQL, JPA, Hibernate that manages product inventory.</p>
+        <a class="btnSource btn-primary btn-sm" href="https://github.com/joyloruth/Product-Inventory-Manager-API">source code</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------ ezoo manager----------------------->
 
-</script>
+ <div class="col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <a class="btnJava btn-sm"     href="">java</a>
+        <a class="btnSQL btn-sm"      href="">postgresql</a>
+        <a class="btnBlack btn-sm"    href="">bootstrap</a>
+        <a class="btnHTML btn-sm"     href="">html</a>
+        <a class="btnCSS btn-sm"      href="">css</a>
+
+        <h4 class="card-title">FullStack Java Application - “Zoo Animal Management System”</h4>
+        <p class="card-text">eZoo is a JavaEE MVC application designed to manage a virtual zoo’s animals and Feeding schedules via an user interface for employees. Used the CRUD methods to create, retrieve, update and delete items to and from the database.</p>
+        <a class="btnSource btn-primary btn-sm" href="https://github.com/joyloruth">source code</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------ turtle game----------------------->
+<div class="col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <a class="btnPython  btn-sm" href="#">python</a>
+        <a class="btnBlack btn-primary btn-sm" href="#">graphical user interface</a>
+        <a class="btnBlack btn-primary btn-sm" href="#">turtle library</a>
+
+        <h4 class="card-title">Turtle Auto Speed Racing Game</h4>
+        <p class="card-text">Turtle racing game, that produces different winners each race.</p>
+        <a class="btnSource  btn-sm" href="https://replit.com/@joyloruth/Turtles-Speed-Races#main.py"> view project</a>
+        <a class="btnSource btn-primary btn-sm" href="https://github.com/joyloruth/Turtle-Speed-Race">source code</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------ sales optim----------------------->
+
+<div class="col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <a class="btnPython btn-sm"   href="">python</a>
+        <a class="btnSQL btn-sm"      href="">mysql</a>
+        <a class="btnBlack btn-sm"      href="">data analysis</a>
+        <a class="btnBlack btn-sm"    href="">data visualization</a>
+       
+
+        <h4 class="card-title">Optimizing Sales Funnel Conversion 	</h4>
+        <p class="card-text">Optimized the sales funnel of an e-commerce store by finding the conversion rate of each phase. I analyzed the event flow to gain insight into the potential buyers’ behavior and made recommendations that can increase the sales conversion rate by 78%.</p>
+        <a class="btnSource btn-primary btn-sm" href="https://github.com/joyloruth">source code</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!------------------ game development----------------------->
+
+<div class="col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <a class="btnJava btn-sm"     href="">java</a>
+        <a class="btnBlack btn-sm"    href="">graphical user interface</a>
+        <a class="btnBlack btn-sm"    href="">game development</a>
+       
+
+        <h4 class="card-title"> FlappyBird Game Application</h4>
+        <p class="card-text">Creating a Flappy Bird game using Java while implementing Object-oriented principles.</p>
+        <a class="btnSource btn-primary btn-sm" href="https://github.com/joyloruth">source code</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------ turtle game----------------------->
+<div class="col-lg-10">
+    <div class="card">
+      <div class="card-body">
+        <a class="btnHTML  btn-sm" href="#">html</a>
+        <a class="btnCSS  btn-sm" href="#">css</a>
+        <a class="btnJavaScript btn-sm" href="#">javascript </a>
+        <a class="btnBlack btn-sm" href="#">bootstrap </a>
+        <h4 class="card-title">Front-End Personal Website </h4>
+        <p class="card-text">Personal website that includes a bit of information about me and a portfolio of my past and current projects.</p>
+        <a class="btnSource  btn-sm" href="https://replit.com/@joyloruth/Turtles-Speed-Races#main.py"> view project</a>
+        <a class="btnSource btn-primary btn-sm" href="https://github.com/joyloruth/Turtle-Speed-Race">source code</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</container>
+</section>
+
+<br></br>
+
+
+
+<!---------------CONTACT ------------------------------------------------------------------------------------>
+<!--    <section id ="connect">
+<div class = "container">
+<div class="row">
+<div class="col-md-6">
+<p class="promo-title">STAY IN TOUCH </p>
+
+
+<p>Keep up with me on and LinkedIn and Github. 
+  
+<br></br>
+
+-->
+
+<section class="contact section-padding">
+  <div class="container">
+    <div class="col-lag-8">
+      <div class="section-title">
+        <h2>Get in Touch</h2>
+        <p> contact me</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!------------------ FOOTER BAR----------------------------------> 
 
-<nav class="footerbar fixed-bottom navbar-light bg-light">
-  <a class="navbar-brand" href="#">  <Copyright> Copyright(c) 2021</Copyright>
-  
-</nav>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="120" height="30" class="d-inline-block align-top" alt="">
+    </a>
+  </nav>
 
 
+
+
+
+
+<!------------------ JSS---------------------------------->    
+    <script   src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    
+<script src="script.js">
+</script>
   </body>
 </html>

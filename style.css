@@ -1,25 +1,11 @@
 
-*
+/*
 {
-  margin: 0;
+  margin-top: 0;
   padding:0;
   font-family: monospace;
   color: #fff;
-}
-
-body
-{
-  font-family: monospace;
-  background-image: linear-gradient(to right,  #01101f,#02203c);
-  /* background-image: linear-gradient(to right,  #42455a, #5f1782); */
-}
-
-
-
-
-
-
-
+}*/
 
 
 /*////////////////////////////NAVIGATION BAR//////////////////////////////*/
@@ -33,6 +19,9 @@ body
 .navbar
 { 
   background-image: linear-gradient(to right,  #01101f,#02203c);
+  color:aqua;
+  font-family: monospace;
+  font-size: 7px;
 
   /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));
   /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
@@ -41,15 +30,26 @@ body
 .navbar-nav li
 {
   padding: 0 10px;
+  font-size: 7px;
 }
 
 .navbar nav li a
 {
   color:rgb(255, 255, 255);
-  font-weight: 600
+  font-weight: 200;
+  
 }
 
 
+body
+{
+  
+  background-image: linear-gradient(to right,  #01101f,#02203c);
+  /* background-image: linear-gradient(to right,  #42455a, #5f1782);
+  font-family: 'monospace'; 
+  //color:#fff;
+  //font-size: 20px;*/
+}
 
 
 
@@ -75,20 +75,64 @@ body
 }
 
 
+
+
+
+
+.banner
+{
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  color:#ffffff;
+  font-family: monospace;
+}
+
+.demo
+{
+  color: white;
+  font-family: monospace;
+}
+
+/*////////////////////////////PORTFOLIO//////////////////////////////////////////*/
+.card
+{
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  margin: 10px 1px;
+  box-shadow: 30px 30px 10px rgb(39, 38, 38);
+  border-style: outset;
+  border-color: rgb(103, 103, 109)
+  
+}
+
+.card-title
+{
+  color: rgb(238, 235, 235);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 10px;
+}
+
+.card-text
+{
+  color:rgba(254, 254, 255, 0.719);
+  font-family: monospace;
+}
+
 /*////////////////////////////BUTTONS/////////////////////////////*/
 .btnBlue
 {
   background-color: #1c87c9;
   border: none;
   color: rgb(7, 11, 68);
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   margin: 1px 1px;
   cursor: pointer;
-  box-shadow: 5px 10px;
+  box-shadow: 5px 5px;
+  font-family: monospace;
 }
 
 .btnGreen
@@ -96,14 +140,15 @@ body
   background-color: rgb(115, 255, 0);
   border: none;
   color: rgb(22, 75, 11);
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   margin: 1px 1px;
   cursor: pointer;
-  box-shadow: 5px 10px;
+  box-shadow: 5px 5px;
+  font-family: monospace;
 }
 
 .btnPink
@@ -111,17 +156,34 @@ body
   background-color: rgb(255, 0, 170);
   border: none;
   color: rgb(46, 5, 32);
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   margin: 1px 1px;
   cursor: pointer;
-  box-shadow: 5px 10px;
+  box-shadow: 5px 5px;
+  font-family: monospace;
 }
 
 .btnPurple
+{
+  background-color: rgb(132, 0, 255);
+  border: none;
+  color: rgb(72, 18, 90);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 1px 1px;
+  cursor: pointer;
+  box-shadow: 5px 5px;
+  font-family: monospace;
+}
+
+.btnDefault
 {
   background-color: rgb(132, 0, 255);
   border: none;
@@ -134,6 +196,7 @@ body
   margin: 1px 1px;
   cursor: pointer;
   box-shadow: 5px 10px;
+  font-family: monospace;
 }
 
 .btnOrange
@@ -149,19 +212,190 @@ body
   margin: 1px 1px;
   cursor: pointer;
   box-shadow: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
 }
 
-.card{
-  background-color: rgb(0, 0, 0);
-  margin: 2px 1px;
+.btnBlack
+{
+  background-color: rgb(80, 78, 78);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
 }
 
+.btnBoot
+{
+  background-color: rgb(132, 0, 255);
+  border: none;
+   color: rgb(72, 18, 90);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnPython
+{
+  background-color: rgb(115, 255, 0);
+  border: none;
+  color: rgb(22, 75, 11);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnSQL
+{
+  background-color: #1c87c9;
+  border: none;
+  color: rgb(7, 11, 68);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnHTML
+{
+  background-color: #fa6400;
+  border: none;
+  color: rgb(85, 32, 7);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnCSS
+{
+  background-color: rgb(255, 166, 0);
+  border: none;
+  color: rgb(141, 61, 23);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnJava
+{
+  background-color: rgb(194, 133, 19);
+  border: none;
+  color: rgb(75, 53, 12);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnJavaScript
+{
+   background-color: rgb(223, 21, 88);
+  border: none;
+  color: rgb(95, 5, 32);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 5px 5px;
+}
+
+.btnSource
+{
+  background-color: rgba(48, 42, 46, 0);
+  border: #fff;
+  color: rgb(211, 211, 211);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 1px 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px;
+  font-family: monospace;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*///////////CONTACT////////////////////////////////////////////*/
+.contact
+{
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  color:#02203c;
+  font-family: monospace;
+}
+
+
+/*////////////////////////////FOOTER//////////////////////////*/
 .footerbar
 {
   background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));
   padding-left: 10px;
-  font-family: monospace;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 8px;
+   display: inline-block;
 }
 
 #footer-bar
@@ -169,12 +403,6 @@ body
   position: sticky;
   bottom:0;
 }
-
-
-
-
-
-
 
 
 
