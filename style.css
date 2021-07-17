@@ -1,22 +1,14 @@
-
-/*
+html,body
 {
-  margin-top: 0;
-  padding:0;
-  font-family: monospace;
-  color: #fff;
-}*/
-
-body {
-  background-color:#ce3635;
-  text-align: left;
-  color:#fff;
-  padding-top:10em;
+  background-image: linear-gradient(to right,  #01101f,#02203c);
+  scroll-behavior: smooth;
 }
-.typewrite{
+
+
+.typewrite
+{
  font-family: monospace;
  color:rgb(255, 255, 255);
- 
 }
 
 
@@ -28,40 +20,34 @@ body {
   z-index: 10;
 }
 
-.navbar
+.navbar 
 { 
   background-image: linear-gradient(to right,  #01101f,#02203c);
-  color:aqua;
   font-family: monospace;
-  font-size: 7px;
-
-  /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));
-  /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
+  font-size: 20px;
 }
 
-.navbar-nav li
+.nav-item
 {
   padding: 0 10px;
-  font-size: 7px;
+  font-size: 20px;
 }
 
-.navbar nav li a
+
+.navbar-nav  ul li
 {
-  color:rgb(255, 255, 255);
+  padding: 0 10px;
+}
+
+.navbar-nav ul li a
+{
   font-weight: 200;
-  
+  color:aqua;
+  font-size: 20px;
 }
 
 
-body
-{
-  
-  background-image: linear-gradient(to right,  #01101f,#02203c);
-  /* background-image: linear-gradient(to right,  #42455a, #5f1782);
-  font-family: 'monospace'; 
-  //color:#fff;
-  //font-size: 20px;*/
-}
+
 
 
 
@@ -83,17 +69,12 @@ body
   font-family: FreeMono, monospace;
   font-weight: bold;
   padding-top: 10px;
-  
 }
 
-.portfolio{
+.portfolio
+{
   margin-right: auto;
 }
-
-
-
-
-
 
 .banner
 {
@@ -101,7 +82,6 @@ body
   padding-top: 20px;
   color:#ffffff;
   font-family: monospace;
-
 }
 
 .demo
@@ -405,7 +385,40 @@ body
 }
 
 
+.btnResume
+{
+  background-color: rgba(194, 133, 19, 0);
+  border: 10px;
+  color: rgb(222, 240, 236);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: monospace;
+  
+}
 
+
+.btnzzzzzzz
+{
+  background-color: rgba(47, 42, 48, 0.404);
+  border: #fff;
+  color: rgb(211, 211, 211);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 1px 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px;
+  font-family: monospace;
+  border-radius: 2px;
+}
 
 
 
@@ -446,4 +459,9 @@ body
 }
 
 
-
+.menu
+{
+  color: rgba(214, 232, 238, 0.603);
+  padding: 10px;
+ 
+}
