@@ -1,18 +1,11 @@
 html,body
 {
-  background-image: linear-gradient(to right,  #01101f,#02203c);
+  background-image: linear-gradient(to right,  #010a14,#02203c);
   scroll-behavior: smooth;
 }
 
+/********NAVIGATION*********************/
 
-.typewrite
-{
- font-family: monospace;
- color:rgb(255, 255, 255);
-}
-
-
-/*////////////////////////////NAVIGATION BAR//////////////////////////////*/
 #nav-bar
 {
   position: sticky;
@@ -22,60 +15,19 @@ html,body
 
 .navbar 
 { 
-  background-image: linear-gradient(to right,  #01101f,#02203c);
+  background-image: linear-gradient(to right,  #010a14,#02203c);
   font-family: monospace;
   font-size: 20px;
 }
 
-.nav-item
+.menu
 {
-  padding: 0 10px;
-  font-size: 20px;
+  color: rgba(206, 248, 250, 0.733);
+  padding: 10px;
+ 
 }
 
-
-.navbar-nav  ul li
-{
-  padding: 0 10px;
-}
-
-.navbar-nav ul li a
-{
-  font-weight: 200;
-  color:aqua;
-  font-size: 20px;
-}
-
-
-
-
-
-
-/*//////////////////////////// HEADING TITLES //////////////////////////////*/
-.promo-title
-{
-  font-size: 40px;
-  color: #fff;
-  margin-top: 100px;
-  font-family: "Open Sans","Helvetica","Arial",sans-serif;
-  font-weight: bold;
-}
-
-.port-title
-{
-  font-size: 40px;
-  color: white;
-  margin: auto;
-  font-family: FreeMono, monospace;
-  font-weight: bold;
-  padding-top: 10px;
-}
-
-.portfolio
-{
-  margin-right: auto;
-}
-
+/********ABOUT ME *********************/
 .banner
 {
   background-color: rgb(255, 255, 255);
@@ -84,42 +36,54 @@ html,body
   font-family: monospace;
 }
 
-.demo
+.typewrite
 {
-  color: white;
-  font-family: monospace;
+ font-family: monospace;
+ color:rgb(255, 255, 255);
+ font-size: 22px;
 }
 
-.min{
-  vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0.637);
-  border-radius: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: outset;
-  border-color: rgb(81, 81, 83);
-  margin-top: 10px;
-  box-shadow: 25px 25px 3px rgba(39, 38, 38, 0.719);
-  
-  
-}
-/*////////////////////////////PORTFOLIO//////////////////////////////////////////*/
-.card
+
+/********PORTFOLIO *********************/
+.header-title
 {
-  background-color: rgba(0, 0, 0, 0.637);
-  border-radius: 3px;
+  font-size: 40px;
+  color: rgba(119, 243, 252, 0.733);
+  margin: auto;
+  font-family: monospace;
+  font-weight: bold;
+  padding-top: 10px;
+  text-shadow: 2px 2px #022d38;
+}
+.portfolio
+{
+  margin-right: auto;
+}
+
+.port-title
+{
+  font-size: 40px;
+  color: #fff;
+  margin-top: 100px;
+  font-family: "Open Sans","Helvetica","Arial",sans-serif;
+  font-weight: bold;
+}
+
+.card{
+  vertical-align: middle;
+  background-color: rgba(12, 24, 46, 0.993);
+  border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
-  box-shadow: 30px 30px 10px rgb(39, 38, 38);
   border-style: outset;
-  border-color: rgb(103, 103, 109)
-  
+  border-color: rgba(100, 250, 217, 0.281);
+  margin-top: 10px;
+  box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.651);
 }
 
 .card-title
 {
-  color: rgb(238, 235, 235);
+  color: rgb(226, 226, 226);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 10px;
 }
@@ -130,7 +94,48 @@ html,body
   font-family: monospace;
 }
 
-/*////////////////////////////BUTTONS/////////////////////////////*/
+
+/********CONNECT *********************/
+
+.contact
+{
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  color:#02203c;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/********FOOTER *********************/
+.footerbar
+{
+  /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));*/
+  padding-left: 10px;
+  background-image: linear-gradient(to right,  #01101f,#02203c);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8px;
+   display: inline-block;
+   color: white;
+}
+
+#footer-bar
+{
+  
+  bottom:0;
+  color: white;
+}
+
+.demo
+{
+  color: white;
+  font-family: monospace;
+}
+
+
+/********BUTTONS *********************/
+
 .btnBlue
 {
   background-color: #1c87c9;
@@ -281,9 +286,6 @@ html,body
 
 .btnSQL
 {
-  /*background-color: #1c87c9;
-  border: none;
-  color: rgb(7, 11, 68);*/
   background-color: rgb(132, 0, 255);
   border: none;
    color: rgb(72, 18, 90);
@@ -387,81 +389,17 @@ html,body
 
 .btnResume
 {
-  background-color: rgba(194, 133, 19, 0);
-  border: 10px;
-  color: rgb(222, 240, 236);
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  margin: 1px 1px;
-  cursor: pointer;
-  border-radius: 3px;
-  font-family: monospace;
-  
-}
-
-
-.btnzzzzzzz
-{
-  background-color: rgba(47, 42, 48, 0.404);
+  background-color: rgba(48, 42, 46, 0);
   border: #fff;
-  color: rgb(211, 211, 211);
+  color: rgb(56, 223, 214);
   padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   margin: 1px 1px;
   cursor: pointer;
   box-shadow: 2px 2px;
   font-family: monospace;
   border-radius: 2px;
-}
-
-
-
-
-
-
-
-
-/*///////////CONTACT////////////////////////////////////////////*/
-.contact
-{
-  background-color: rgb(255, 255, 255);
-  padding-top: 20px;
-  color:#02203c;
-  font-family: monospace;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/*////////////////////////////FOOTER//////////////////////////*/
-.footerbar
-{
-  /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));*/
-  padding-left: 10px;
-  background-image: linear-gradient(to right,  #01101f,#02203c);
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 8px;
-   display: inline-block;
-   color: white;
-}
-
-#footer-bar
-{
-  
-  bottom:0;
-  color: white;
-}
-
-
-.menu
-{
-  color: rgba(214, 232, 238, 0.603);
-  padding: 10px;
- 
 }
