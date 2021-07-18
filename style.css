@@ -79,6 +79,13 @@ html,body
   border-color: rgba(100, 250, 217, 0.281);
   margin-top: 10px;
   box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.651);
+  transition: width 2s, height 4s;
+}
+
+.card:hover
+{
+ width: 95%;
+  background-color: rgba(7, 12, 22, 0.993);
 }
 
 .card-title
