@@ -16,7 +16,7 @@ html,body
 .navbar 
 { 
   background-image: linear-gradient(to right,  #010a14,#02203c);
-  font-family: monospace;
+  
   font-size: 20px;
 }
 
@@ -24,6 +24,15 @@ html,body
 {
   color: rgba(206, 248, 250, 0.733);
   padding: 12px;
+  font-family: 'Cutive Mono';
+}
+
+.menu:hover
+{
+ color: rgb(179, 47, 255);
+ text-decoration: none;
+ text-shadow: 1px 1px #2d023f;
+ 
  
 }
 
@@ -38,7 +47,7 @@ html,body
 
 .typewrite
 {
- font-family: monospace;
+ font-family: 'Cutive Mono';
  color:rgb(255, 255, 255);
  font-size: 22px;
 }
@@ -50,10 +59,10 @@ html,body
   font-size: 40px;
   color: rgba(200, 245, 248, 0.733);
   margin: auto;
-  font-family: monospace;
+  font-family: 'Cutive Mono';
   font-weight: bold;
   padding-top: 10px;
-  text-shadow: 2px 2px #022d38;
+  text-shadow: 2px 2px #000000;
 }
 .portfolio
 {
@@ -79,13 +88,13 @@ html,body
   border-color: rgba(100, 250, 217, 0.281);
   margin-top: 10px;
   box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.651);
-  transition: width 2s, height 4s;
+  transition: width 40s, height 40s;
 }
 
 .card:hover
 {
- width: 95%;
-  background-color: rgba(7, 12, 22, 0.993);
+  width: 95%;
+  background-color: rgba(12, 24, 46, 0.993);
 }
 
 .card-title
@@ -98,7 +107,7 @@ html,body
 .card-text
 {
   color:rgb(243, 248, 244);
-  font-family: monospace;
+  font-family: 'Cutive Mono';
 }
 
 
@@ -385,11 +394,11 @@ html,body
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 17px;
   margin: 1px 1px;
   cursor: pointer;
-  box-shadow: 2px 2px;
-  font-family: monospace;
+  box-shadow: 1px 1px;
+  font-family: 'Cutive Mono';
   border-radius: 2px;
 }
 
@@ -398,16 +407,30 @@ html,body
 {
   background-color: rgba(48, 42, 46, 0);
   border: #fff;
-  color: rgb(235, 243, 243);
-  padding: 5px 20px;
+  color: rgb(211, 211, 211);
+  padding: 10px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 1px 1px;
+  margin: .25px .25px;
   cursor: pointer;
-  box-shadow: 2px 2px;
-  font-family: monospace;
+  box-shadow: 1px 1px;
+  font-family: 'Cutive Mono';
   border-radius: 2px;
+}
+
+.btnResume:hover
+{
+  text-decoration: none;
+  color:aqua;
+}
+
+.btnSource:hover
+{
+  text-decoration: none;
+  color:rgba(48, 243, 243, 0.473);
+  background-color: rgba(0, 255, 255, 0);;
+  font-size: 15px;
 }
 
