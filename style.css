@@ -24,7 +24,8 @@ html,body
 {
   color: rgba(206, 248, 250, 0.733);
   padding: 12px;
-  font-family: 'Cutive Mono';
+  font-family: 'Special Elite';
+  font-size: 18px;
 }
 
 .menu:hover
@@ -37,7 +38,7 @@ html,body
 }
 
 /********ABOUT ME *********************/
-.banner
+.about
 {
   background-color: rgb(255, 255, 255);
   padding-top: 20px;
@@ -47,9 +48,16 @@ html,body
 
 .typewrite
 {
- font-family: 'Cutive Mono';
- color:rgb(255, 255, 255);
- font-size: 22px;
+  font-family: 'Cutive Mono';
+  color:rgb(255, 255, 255);
+  font-size: 22px;
+  
+}
+
+.typewrite:hover
+{
+  text-decoration: none;
+  color:#fff;
 }
 
 
@@ -59,7 +67,7 @@ html,body
   font-size: 40px;
   color: rgba(200, 245, 248, 0.733);
   margin: auto;
-  font-family: 'Cutive Mono';
+  font-family: 'Special Elite';
   font-weight: bold;
   padding-top: 10px;
   text-shadow: 2px 2px #000000;
@@ -80,7 +88,7 @@ html,body
 
 .card{
   vertical-align: middle;
-  background-color: rgba(12, 24, 46, 0.993);
+  background-color: rgba(6, 12, 24, 0.993);
   border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
@@ -95,12 +103,13 @@ html,body
 {
   width: 95%;
   background-color: rgba(12, 24, 46, 0.993);
+  box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.418);
 }
 
 .card-title
 {
-  color: rgb(226, 226, 226);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.719);
+  font-family: 'Special Elite';
   margin-top: 10px;
 }
 
@@ -108,6 +117,7 @@ html,body
 {
   color:rgb(243, 248, 244);
   font-family: 'Cutive Mono';
+  font-size: 18px;
 }
 
 
@@ -398,7 +408,7 @@ html,body
   margin: 1px 1px;
   cursor: pointer;
   box-shadow: 1px 1px;
-  font-family: 'Cutive Mono';
+   font-family: 'Special Elite';
   border-radius: 2px;
 }
 
@@ -416,7 +426,7 @@ html,body
   margin: .25px .25px;
   cursor: pointer;
   box-shadow: 1px 1px;
-  font-family: 'Cutive Mono';
+  font-family: 'Special Elite';
   border-radius: 2px;
 }
 
