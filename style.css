@@ -108,7 +108,7 @@ html,body
 
 .card-title
 {
-  color: rgba(255, 255, 255, 0.719);
+  color: rgba(255, 255, 255, 0.863);
   font-family: 'Special Elite';
   margin-top: 10px;
 }
@@ -162,102 +162,6 @@ html,body
 
 /********BUTTONS *********************/
 
-.btnBlue
-{
-  background-color: #1c87c9;
-  border: none;
-  color: rgb(7, 11, 68);
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-  font-family: monospace;
-}
-
-.btnGreen
-{
-  background-color: rgb(115, 255, 0);
-  border: none;
-  color: rgb(22, 75, 11);
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-  font-family: monospace;
-}
-
-.btnPink
-{
-  background-color: rgb(255, 0, 170);
-  border: none;
-  color: rgb(46, 5, 32);
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-  font-family: monospace;
-}
-
-.btnPurple
-{
-  background-color: rgb(132, 0, 255);
-  border: none;
-  color: rgb(72, 18, 90);
-  padding: 5px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  cursor: pointer;
-  box-shadow: 5px 5px;
-  font-family: monospace;
-}
-
-.btnDefault
-{
-  background-color: rgb(132, 0, 255);
-  border: none;
-  color: rgb(72, 18, 90);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  cursor: pointer;
-  box-shadow: 5px 10px;
-  font-family: monospace;
-}
-
-.btnOrange
-{
-  background-color: rgb(255, 166, 0);
-  border: none;
-  color: rgb(141, 61, 23);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 1px 1px;
-  cursor: pointer;
-  box-shadow: 5px 10px;
-  border-radius: 5px;
-  font-family: monospace;
-}
 
 .btnBlack
 {
@@ -270,28 +174,23 @@ html,body
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
+  cursor: none;
   border-radius: 3px;
   font-family: monospace;
   box-shadow: 5px 5px;
+  pointer-events: none;
 }
 
-.btnBoot
+.btnBlack:hover
 {
-  background-color: rgb(132, 0, 255);
-  border: none;
-   color: rgb(72, 18, 90);
-  padding: 5px 5px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 1px 1px;
-  cursor: pointer;
-  border-radius: 3px;
-  font-family: monospace;
-  box-shadow: 5px 5px;
+  color: rgb(51, 50, 50);
+  pointer-events: none;
+  cursor: default;
 }
+
+
+
 
 .btnPython
 {
@@ -304,95 +203,149 @@ html,body
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
   border-radius: 3px;
   font-family: monospace;
   box-shadow: 5px 5px;
+  pointer-events: none;
+  cursor: default;
+}
+
+.btnPython:hover
+{
+  text-decoration: none;
+  color: rgb(22, 75, 11);
+  pointer-events: none;
+  cursor: default;
 }
 
 .btnSQL
 {
   background-color: rgb(132, 0, 255);
   border: none;
-   color: rgb(72, 18, 90);
+  color: rgb(72, 18, 90);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
+  cursor: default;
   border-radius: 3px;
+  pointer-events: none;
   font-family: monospace;
   box-shadow: 5px 5px;
+}
+
+.btnSQL:hover
+{
+  text-decoration: none;
+  color: rgb(72, 18, 90);
+  pointer-events: none;
+  cursor: default;
 }
 
 .btnHTML
 {
-  background-color: #eb4403;
+  background-color: #03ebb1;
   border: none;
-  color: rgb(85, 32, 7);
+  color: rgb(7, 77, 65);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
+  cursor: none;
   border-radius: 3px;
   font-family: monospace;
   box-shadow: 5px 5px;
+  pointer-events: none;
+}
+
+.btnHTML:hover
+{
+  text-decoration: none;
+  color: rgb(85, 32, 7);
+  cursor: none;
+  pointer-events: none;
+  
 }
 
 .btnCSS
 {
-  background-color: rgb(255, 166, 0);
+  background-color: rgb(0, 255, 106);
   border: none;
-  color: rgb(141, 61, 23);
+  color: rgb(11, 68, 26);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
+  cursor: none;
   border-radius: 3px;
   font-family: monospace;
   box-shadow: 5px 5px;
+  pointer-events: none;
+}
+.btnCSS:hover
+{
+  text-decoration: none;
+  color: rgb(141, 61, 23);
+  pointer-events: none;
+  cursor: default;
 }
 
 .btnJava
 {
-  background-color: rgb(194, 133, 19);
+  background-color: rgb(81, 184, 231);
   border: none;
-  color: rgb(75, 53, 12);
+  color: rgb(12, 50, 75);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
   border-radius: 3px;
   font-family: monospace;
   box-shadow: 5px 5px;
+  pointer-events: none;
+  cursor: default;
 }
+.btnJava:hover
+{
+  text-decoration: none;
+  color: rgb(75, 53, 12);
+  pointer-events: none;
+  cursor: default;
+}
+
 
 .btnJavaScript
 {
-   background-color: rgb(223, 21, 88);
+   background-color: rgb(223, 21, 223);
   border: none;
-  color: rgb(95, 5, 32);
+  color: rgb(95, 5, 88);
   padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   margin: 1px 1px;
-  cursor: pointer;
+  cursor: none;
   border-radius: 3px;
   font-family: monospace;
   box-shadow: 5px 5px;
+  pointer-events: none;
+}
+
+.btnJavaScript:hover
+{
+  text-decoration: none;
+  color: rgb(95, 5, 32);
+  pointer-events: none;
+  cursor: none;
 }
 
 .btnSource
