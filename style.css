@@ -2,10 +2,15 @@ html,body
 {
   background-image: 
     linear-gradient(rgba(0,0,0,0.05) 50%, 0, transparent 100%), 
-    linear-gradient(-135deg, #0cc, #066);
-  background-size: .5em .5em, 100% 100%;
+    linear-gradient(-75deg, #0cc, #066);
+  background-size: .5em .5em, 80% 80%;
+  transition: background-color 2s ease-in;
   scroll-behavior: smooth;
+  align-content: center;
+   margin-left: auto;
+  margin-right: auto;
 }
+
 
 /********NAVIGATION*********************/
 
@@ -22,8 +27,14 @@ html,body
   /*background-image: linear-gradient(to right,  #010a14,#02203c);*/
 
   background-image: linear-gradient(to right,  #010a14,#02203c);
-  
+
+  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.651);
   font-size: 20px;
+  border-bottom: 2px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: outset;
+  border-color: rgba(100, 250, 217, 0.281);
 }
 
 .menu
@@ -36,24 +47,65 @@ html,body
 
 .menu:hover
 {
- color: rgb(179, 47, 255);
+ color: rgb(255, 255, 255);
  text-decoration: none;
  text-shadow: 1px 1px #2d023f;
+ font-size: 20px;
  
  
+}
+
+
+
+#header
+{
+  background-image: linear-gradient(to right,  #010a14,#02203c);
+  clip-path: polygon(0 7%, 100% 0, 100% 95%, 0 95%);
+  background-size: cover;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+
+
+.header-title2
+{
+  font-size: 75px;
+  color: rgba(200, 245, 248, 0.733);
+  margin: auto;
+  font-family: 'Special Elite';
+  font-weight: bold;
+  padding-top: 10px;
+  text-shadow: 2px 2px #000000;
+}
+
+.header-title2:hover
+{
+  font-size: 100px;
+  color: rgba(37, 128, 134, 0.733);
+  margin: auto;
+  font-family: 'Special Elite';
+  font-weight: bold;
+  padding-top: 10px;
+  text-shadow: 2px 2px #000000;
 }
 
 /********ABOUT ME *********************/
 #about
 {
-  /* background-image: linear-gradient(to right,  #010a14,#02203c);*/
-   background-image: url('bg.jpg'),radial-gradient(#28a3dd, #0d7751);
+  /* background-image: linear-gradient(to right,  #fcfcfc,#b1beca); */
+  background-image: radial-gradient(#05293a, #010e20);
 
-   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-   
-  padding-top: 20px;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 95%);
+  padding-top: 100px;
   color:#ffffff;
   font-family: monospace;
+  height: 80%;
+ 
   /*background-image: 
     linear-gradient(rgba(0,0,0,0.05) 50%, 0, transparent 100%), 
     linear-gradient(-135deg, #02203c, #010a14);
@@ -62,9 +114,16 @@ html,body
 
 .typewrite
 {
-  font-family: 'Cutive Mono';
-  color:rgb(255, 255, 255);
-  font-size: 22px;
+  font-size: 40px;
+  color: rgba(200, 245, 248, 0.733);
+  margin: auto;
+  font-family: 'Special Elite';
+  font-weight: bold;
+  padding-top: 10px;
+  text-shadow: 2px 2px #000000;
+  border-left: 2vmin solid rgba(245, 247, 247, 0.158);
+  border-right: 2vmin solid rgba(245, 247, 247, 0.158);
+  
   
 }
 
@@ -90,9 +149,17 @@ html,body
 #portfolio
 {
   margin-right: auto;
-  background-image: 
-     
-    linear-gradient(-135deg, rgb(206, 245, 245), rgb(199, 228, 228));
+
+  background-image: url('blue2.jpg'),radial-gradient(#28a3dd, #0d7751);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+  position: relative;
+ /* background-image: linear-gradient(to right,  #010a14,#02203c);*/
+  
   
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
@@ -116,20 +183,21 @@ html,body
   border-style: outset;
   border-color: rgba(100, 250, 217, 0.281);
   margin-top: 10px;
-  box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.651);
-  transition: width 40s, height 40s;
+  box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.856);
+  
 }
 
 .card:hover
 {
-  width: 95%;
+  width: 99%;
   background-color: rgba(12, 24, 46, 0.993);
   box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.418);
+  transition: width 40s, height 40s;
 }
 
 .card-title
 {
-  color: rgba(255, 255, 255, 0.623);
+  color: rgba(255, 255, 255, 0.836);
   font-family: 'Special Elite';
   margin-top: 10px;
 }
@@ -148,8 +216,8 @@ html,body
 {
   background-image: linear-gradient(to right,  #010a14,#02203c); 
 
-  clip-path: polygon(0 5%, 95% 0, 90% 95%, 0 90%);
-  
+  clip-path: polygon(0 7%, 95% 0, 90% 95%, 0 80%);
+ 
   padding-top: 20px;
   color:#02203c;
   font-family: monospace;
@@ -411,6 +479,7 @@ html,body
 {
   text-decoration: none;
   color:aqua;
+  font-size: 21px;
 }
 
 .btnSource:hover
@@ -421,3 +490,67 @@ html,body
   font-size: 15px;
 }
 
+.words {
+  color: #3f4bf4;
+  font-size: 0;
+  line-height: 1.5;
+   font-family: 'Special Elite';
+   align-items: center;
+}
+
+
+
+.animated-title > div {
+ 
+  height: 80%;
+  position: center;
+  width: 80%;
+  font-family: 'Special Elite';
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 3vmin 0;
+  position: center;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 2vmin solid rgba(245, 247, 247, 0.158);
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #ddfaee;
+  font-family: 'Special Elite';
+}
+
+.animated-title > div.text-bottom {
+  bottom: 0;
+  color: #a8f3d4;
+}
+
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
