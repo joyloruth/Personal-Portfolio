@@ -1,6 +1,9 @@
 html,body
 {
-  background-image: linear-gradient(to right,  #010a14,#02203c);
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.05) 50%, 0, transparent 100%), 
+    linear-gradient(-135deg, #0cc, #066);
+  background-size: .5em .5em, 100% 100%;
   scroll-behavior: smooth;
 }
 
@@ -11,10 +14,13 @@ html,body
   position: sticky;
   top:0;
   z-index: 10;
+  
 }
 
 .navbar 
 { 
+  /*background-image: linear-gradient(to right,  #010a14,#02203c);*/
+
   background-image: linear-gradient(to right,  #010a14,#02203c);
   
   font-size: 20px;
@@ -38,12 +44,20 @@ html,body
 }
 
 /********ABOUT ME *********************/
-.about
+#about
 {
-  background-color: rgb(255, 255, 255);
+  /* background-image: linear-gradient(to right,  #010a14,#02203c);*/
+   background-image: url('bg.jpg'),radial-gradient(#28a3dd, #0d7751);
+
+   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+   
   padding-top: 20px;
   color:#ffffff;
   font-family: monospace;
+  /*background-image: 
+    linear-gradient(rgba(0,0,0,0.05) 50%, 0, transparent 100%), 
+    linear-gradient(-135deg, #02203c, #010a14);
+  background-size: .5em .5em, 100% 100%;*/
 }
 
 .typewrite
@@ -72,9 +86,15 @@ html,body
   padding-top: 10px;
   text-shadow: 2px 2px #000000;
 }
-.portfolio
+
+#portfolio
 {
   margin-right: auto;
+  background-image: 
+     
+    linear-gradient(-135deg, rgb(206, 245, 245), rgb(199, 228, 228));
+  
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
 .port-title
@@ -87,8 +107,9 @@ html,body
 }
 
 .card{
+  
   vertical-align: middle;
-  background-color: rgba(6, 12, 24, 0.993);
+  background-color: rgba(3, 9, 20, 0.938);
   border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
@@ -123,9 +144,12 @@ html,body
 
 /********CONNECT *********************/
 
-.contact
+#contact
 {
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right,  #010a14,#02203c); 
+
+  clip-path: polygon(0 5%, 95% 0, 90% 95%, 0 90%);
+  
   padding-top: 20px;
   color:#02203c;
   font-family: monospace;
