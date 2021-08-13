@@ -19,11 +19,11 @@ html,body
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-name: fadetoblack ;
-  animation-duration: 1s;
-  animation-delay: 10s;
-  animation-timing-function: ease;
-  animation-iteration-count: 1;
+  animation-name: fadetoblack, makevisible;
+  animation-duration: 1s, 1s;
+  animation-delay: 10s,12s;
+  animation-timing-function: ease,ease;
+  animation-iteration-count: 1,1;
   animation-fill-mode: forwards;
   z-index: 999;
   background-color: black;
@@ -32,25 +32,35 @@ html,body
 
 #logo{
   height:200px;
+  display: flex;
   animation-name: spin, smallsize;
   animation-duration: 3s, 2s;
   animation-delay: 0s,3s;
   animation-iteration-count: 5,3;
   animation-direction: alternate-reverse,alternate;
   animation-fill-mode: forwards;
-  
-
 }
 
+@keyframes diplayNone
+{
+  from
+  {
+    display: flex;
+  }
+   to
+  {
+    display: none;
+  }
+}
 @keyframes makevisible
 {
   from
   {
-    visibility: hidden;
+    visibility: visible;
   }
   to
   {
-    visibility: visible;
+    visibility: hidden;
   }
 }
 
@@ -92,7 +102,11 @@ html,body
   border-right: 0px;
   border-style: outset;
   border-color: rgba(100, 250, 217, 0.281);
-  position: relative;
+  
+}
+
+#menubar{
+  background-color: black;
 }
 
 .menu
@@ -101,6 +115,7 @@ html,body
   padding: 12px;
   font-family: 'Special Elite';
   font-size: 18px;
+  
 }
 
 .menu:hover
@@ -231,6 +246,20 @@ html,body
     background-color: rgba(0, 0, 0, 0);
   }
 }
+
+@keyframes fadeInMenuFont
+{
+  from
+  {
+     color: rgba(0, 0, 0, 0);
+  }
+
+  to
+  {
+    color: rgba(206, 248, 250, 0.733);
+  }
+}
+
 
 
 
