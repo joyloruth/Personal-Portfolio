@@ -13,7 +13,7 @@ html,body
 
 #preload{
   width:100%;
-  height:100%;
+  height:100vh;
   position: fixed;
   top:0;
   display: flex;
@@ -27,8 +27,41 @@ html,body
   animation-fill-mode: forwards;
   z-index: 999;
   background-color: black;
+  
 
 }
+
+#walkerbg{
+
+  background-color: orange;
+  width:100%;
+  height:100vh;
+  
+}
+
+.walkerman{
+  
+  background:url("manwalking.png");
+}
+
+#computer{
+  width: 500px;
+  height: 450px;
+  position: absolute;
+  top:30%;
+
+
+}
+
+#favicon{
+  width:200px;
+  height:200px;
+  position: absolute;
+  top:40%;
+  animation-delay: spin 2s ease;
+}
+
+
 
 #logo{
   height:200px;
