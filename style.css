@@ -41,6 +41,7 @@ html,body
   position: absolute;
   bottom: 0;
   width:400px;
+  animation: faceUp 2s ease;
 }
 
 #computer{
@@ -48,15 +49,17 @@ html,body
   width:150px;
   height:120px;
   bottom:155px;
+  animation: faceUp 2s ease;
 }
 
 #window{
   position: absolute;
   right:90px;
+  animation: faceUp 2s ease;
 }
 
 #bookshelf{
-=
+
   height:110px;
   width:130px;
 }
@@ -83,7 +86,7 @@ html,body
 
 @keyframes faceUp{
   0%{
-    transform: translateY(50px);
+    transform: translateY(500px);
   }
 
   100%{
