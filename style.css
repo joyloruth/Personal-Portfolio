@@ -12,6 +12,7 @@ html,body
 }
 
 #preload{
+
   width:100%;
   height:100vh;
   position: fixed;
@@ -29,40 +30,175 @@ html,body
   background-color: black;
 }
 
+#door{
+  background-color: blue;
+
+  }
 
 #afrogirl{
-  animation: faceUp 2s linear;
+  animation: moveUp 2s linear;
   animation-fill-mode: forwards;
-  width: 400px;
-  bottom: 0;
+  width: 75px;
+  position: absolute;
+  height:95px;
+  top:210px;
+  background-size: 10px;
+  left:420px;
 }
 
 #desk{
   position: absolute;
   bottom: 0;
-  width:400px;
-  animation: faceUp 2s ease;
+  width:355px;
+  left:400px;
+  animation: moveUp 2.5s ease;
+}
+
+#chair{
+  position: absolute;
+  bottom: -25px;
+  left:530px;
+  animation: moveUp 3.25s ease;
+  height:210px;
+  width:175px;
 }
 
 #computer{
- position: absolute;
+  position: absolute;
   width:150px;
   height:120px;
-  bottom:155px;
-  animation: faceUp 2s ease;
+  bottom:160px;
+  left:500px;
+  animation: moveUp 2s ease;
+  z-index: 1;
+
 }
 
 #window{
   position: absolute;
-  right:90px;
-  animation: faceUp 2s ease;
+  left:32px;
+  animation: moveRight 2s ease;
+  top:118px;
+  width:175px;
+  
+}
+
+
+#outside{
+  position: absolute;
+  top:130px;
+  left:49px;
+  height:285px;
+  width:145px;
+  animation: outsideWeather, walk;
+  animation-duration: 5s,60s;
+  animation-timing-function: ease-in, linear;
+  animation-iteration-count: 1,infinite;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  background-attachment: fixed;
+  background-size: contain;
+  z-index: 0;
+}
+
+#blinds{
+  position: absolute;
+  z-index: 3;
+  top:115px;
+  left:30px;
+  height:350px;
+  animation: moveRight, pullBlinds;
+  animation-delay: 0s,9s;
+  animation-timing-function: ease, ease-in;
+  animation-duration: 2s, .5s;
+  animation-iteration-count: 1,1;
+  animation-fill-mode: forwards;
+  width:178px;
 }
 
 #bookshelf{
-
+  position: absolute;
   height:110px;
   width:130px;
+  right:0;
+  animation: moveUp 3s ease;
 }
+
+#picture{
+  position: absolute;
+  height:170px;
+  width:130px;
+  animation: moveUp 1.75s ease;
+  top:175px;
+  background-size: 10px;
+  left:400px;
+}
+
+#light{
+  position: absolute;
+  top:-10px;
+  width:110px;
+  height:300px;
+  left:650px;
+  animation: moveDown 2s ease;
+
+}
+
+
+
+#screen{
+
+  height:53.5px;
+  width: 65px;
+  position: absolute;
+  bottom:200px;
+  left:515px;
+  animation: screenOn 2s ease-in;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+  background-blend-mode: luminosity;
+  border-radius: 2px;
+}
+
+#powerButton{
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  left:615px;
+  bottom: 210px;
+  border-radius: 5px;
+  z-index: 0;
+  animation: powerButtonOn .5s ease-in-out;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+#screenIcon{
+  visibility: hidden;
+  position: absolute;
+  width:43px;
+  margin: auto;
+  left:13px;
+  top:3px;
+  animation: makevisible,spin;
+  animation-delay: 7s;
+  animation-duration: 1s,1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal,alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1,3;
+}
+
+#plant{
+  position: absolute;
+  bottom: 0px;
+  left:760px;
+      animation: moveLeft 3.25s ease;
+
+}
+
 
 @keyframes walk{
   0%{
@@ -73,18 +209,39 @@ html,body
   }
 }
 
-@keyframes forward{
+@keyframes moveRight{
   0%{
     transform: translateX(-200px);
   }
 
   100%{
-    transform: translateX(1200px);
+    transform: translateX(0);
   }
 }
 
+@keyframes moveLeft{
+  0%{
+    transform: translateX(200px);
+  }
 
-@keyframes faceUp{
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes outsideWeather{
+  
+ from {
+    background-color:rgba(0, 0, 0, 0);
+  }
+
+ to {
+    background-color: skyblue;
+    background-image: url("clouds.png");
+  }
+}
+
+@keyframes moveUp{
   0%{
     transform: translateY(500px);
   }
@@ -93,6 +250,61 @@ html,body
     transform: translateY(-50x);
   }
 }
+
+@keyframes moveDown{
+  0%{
+    transform: translateY(-500px);
+  }
+
+  100%{
+    transform: translateY(50x);
+  }
+}
+
+
+@keyframes screenOn{
+  
+ from {
+    background-color:black;
+  }
+
+ to {
+    background-color: rgba(255, 255, 255, 0.742);
+    background-blend-mode: luminosity;
+  }
+}
+
+@keyframes powerButtonOn{
+  
+ from {
+      background-color:rgba(0, 0, 0, 0);
+  }
+
+ to {
+      background-color: rgb(47, 248, 255);
+  }
+}
+
+@keyframes pullBlinds{
+ from {
+      height: 380px;
+
+  }
+
+ to {
+      height:5px;
+     
+
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -132,11 +344,11 @@ html,body
 {
   from
   {
-    visibility: visible;
+    visibility: hidden;
   }
   to
   {
-    visibility: hidden;
+    visibility: visible;
   }
 }
 
@@ -282,39 +494,8 @@ html,body
   transform: translate(0, 100%);
 }
 
-.intro-font > div.text-top div span:first-child 
-{
-  color: #ddfaee;
-  font-family: 'Special Elite';
-}
 
-.intro-font > div.text-bottom 
-{
-  bottom: 0;
-  color: #a8f3d4;
-}
 
-.intro-font > div.text-bottom div
-{
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
-}
-
-@keyframes showTopText 
-{
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-
-@keyframes showBottomText
-{
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
 
 @keyframes fadetoblack
 {
@@ -668,7 +849,8 @@ html,body
 .btnResume
 {
   background-color: rgb(255, 255, 255);
-  border: #fff;
+  border: black;
+  border-width: 1px;
   color: rgb(0, 0, 0);
   padding: 10px 5px;
   text-align: center;
