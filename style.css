@@ -35,28 +35,30 @@ html,body
 
   }
 
-#afrogirl{
-  animation: moveUp 2s linear;
-  animation-fill-mode: forwards;
-  width: 75px;
-  position: absolute;
-  height:95px;
-  top:210px;
-  background-size: 10px;
-  left:420px;
-}
+
 
 #desk{
   position: absolute;
   bottom: 0;
   width:355px;
   left:400px;
-  animation: moveUp 2.5s ease;
+  animation: moveUp 2.0s ease;
+}
+
+#pencilcan{
+  position: absolute;
+  top:390px;
+  width:50px;
+  height:60px;
+  left:440px;
+  animation: moveDown 2.0s ease;
+  
+
 }
 
 #chair{
   position: absolute;
-  bottom: -25px;
+  bottom: -45px;
   left:530px;
   animation: moveUp 3.25s ease;
   height:210px;
@@ -73,6 +75,18 @@ html,body
   z-index: 1;
 
 }
+#stickynote{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:655px;
+  top:300px;
+  animation: noteFall 2s ease;
+}
+
+#stickynote:hover{
+  animation: moveDown 1s ease-in-out;
+}
 
 #window{
   position: absolute;
@@ -80,27 +94,33 @@ html,body
   animation: moveRight 2s ease;
   top:118px;
   width:175px;
-  
-  
 }
 
+#windows{
+  position: absolute;
+  width: 140px;
+  top:130px;
+  overflow: hidden;
+  height: 275px;
+  left:50px;
+  animation: moveRight 2s ease;
+}
 
 #outside{
   position: absolute;
-  top:130px;
-  left:49px;
+  top:0px;
+  left:-200px;
   height:285px;
-  width:145px;
-  animation: outsideWeather, walk;
-  animation-duration: 10s,60s;
-  animation-timing-function: ease, ease;
-  animation-iteration-count: infinite,infinite;
-  animation-direction: alternate,normal;
-  animation-delay: 4s;
+  width: 600px;
+  animation: outsideweather;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   background-attachment: fixed;
   background-size:contain;
-
   z-index: 0;
 }
 
@@ -111,7 +131,7 @@ html,body
   left:30px;
   height:350px;
   animation: moveRight, pullBlinds;
-  animation-delay: 0s,3s;
+  animation-delay: 0s,5s;
   animation-timing-function: ease, ease-in;
   animation-duration: 2s, .5s;
   animation-iteration-count: 1,1;
@@ -119,35 +139,90 @@ html,body
   width:178px;
 }
 
+#blinds:hover{
+  height:356px;
+}
 #bookshelf{
   position: absolute;
-  height:110px;
+  height:100px;
   width:130px;
-  right:0;
+  left:580px;
+  top:170px;
+  animation: moveDown 3s ease;
+}
+
+#clock{
+  position: absolute;
+  height:120px;
+  width:130px;
+  left:420px;
+  top:180px;
+  animation: moveUp 3s ease;
+  
+}
+#clockHourHand{
+  position: absolute;
+  height:45px;
+  width:45px;
+  left:461px;
+  top:220px;
+  animation: moveUp, spin;
+  animation-duration: 3s,60s;
+  animation-delay: 0s,4s;
+  -webkit-animation-duration: 3s,60s;
+  animation-timing-function: ease,linear;
+  animation-iteration-count: 1,infinite;
+  animation-fill-mode: forwards;
+}
+
+#clockMinHand{
+  position: absolute;
+  height:30px;
+  width:30px;
+  left:471px;
+  top:226px;
+  animation: moveUp, spin;
+  animation-duration: 3s,10s;
+  animation-delay: 0s,4s;
+  -webkit-animation-duration: 3s,6s;
+  animation-timing-function: ease,linear;
+  animation-iteration-count: 1,infinite;
+  animation-fill-mode: forwards;
+ 
+  
+
+}
+#corkboard{
+  position: absolute;
+  height:100px;
+  width:130px;
+  left:580px;
+  top:280px;
   animation: moveUp 3s ease;
 }
 
 #picture{
   position: absolute;
-  height:170px;
+  height:150px;
   width:130px;
   animation: moveUp 1.75s ease;
-  top:175px;
+  top:295px;
   background-size: 10px;
-  left:400px;
+  left:285px;
 }
 
 #picture:hover{
   height: 175px;
+  width:150px;
+  transition: all 1s;
 
 }
 
 #light{
   position: absolute;
   top:-10px;
-  width:110px;
-  height:300px;
-  left:620px;
+  left:450px;
+  width:250px;
   animation: moveDown 2s ease;
 }
 
@@ -266,17 +341,14 @@ html,body
   }
 }
 
-@keyframes outsideWeather{
+@keyframes outsideweather{
   
- from {
-
-    background-color: skyblue;
-    background-image: url("daylight.png");
+  0%{
+    transform: translateX(200px);
   }
 
- to {
-    background-color: rgb(5, 0, 94);
-    background-image: url("nightsky.png");
+  100%{
+    transform: translateX(-200px);
   }
 }
 
@@ -405,6 +477,22 @@ html,body
 }
 
 
+@keyframes noteFall{
+  100%{
+    transform: translateY(120px) rotate(40deg);
+  }
+
+  10%{
+    transform: rotateY(120deg);
+  }
+  0%{
+      
+  }
+
+
+}
+
+
 
 
 @keyframes smallsize{
@@ -433,14 +521,18 @@ html,body
 .navbar 
 { 
   font-size: 20px;
-
   background-color: rgba(0, 0, 0, 0);
   top: 0;
   position: absolute;
+  transition: 1s all ease-in;
+ 
+  
+
 }
 
 #menubar{
   background-color: black;
+  
 }
 
 .menu
@@ -449,7 +541,8 @@ html,body
   padding: 12px;
   font-family: 'Special Elite';
   font-size: 18px;
-  
+  transition: 1s all ease-in; 
+  left:600px; 
 }
 
 .menu:hover
@@ -458,6 +551,7 @@ html,body
  text-decoration: none;
  text-shadow: 1px 1px #2d023f;
  font-size: 20px;
+ transform: translateX(35deg);
 }
 
 
@@ -526,14 +620,20 @@ html,body
   align-items: center;
   display: flex;
   position: absolute;
-  left:800px;
+  left:900px;
+  top:100px;
   border-radius: 3px;
   box-shadow: 1px 1px 2px black, 0 0 25px rgb(148, 148, 175), 0 0 5px white;
 }
 
 
 
-
+#speaker{
+  position: absolute;
+  bottom:5px;
+  left:900px;
+  width:75px;
+}
 
 
 @keyframes fadetoblack
@@ -714,7 +814,12 @@ html,body
   position: absolute;
   bottom: -10px;
   left:220px;
-    animation: moveRight 3.5s ease;
+  animation: moveRight 3.5s ease;
+}
+
+#trashcan:hover{
+  animation: spin .5s ease;
+  
 }
 
 
@@ -887,27 +992,30 @@ html,body
   margin: 1px 1px;
   cursor: pointer;
   box-shadow: 1px 1px;
-   font-family: 'Special Elite';
+  font-family: 'Special Elite';
   border-radius: 2px;
 }
 
 
 .btnResume
 {
-  background-color: rgb(255, 255, 255);
+  background:inherit;
   border: black;
   border-width: 1px;
   color: rgb(0, 0, 0);
   padding: 10px 5px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   margin: .25px .25px;
   cursor: pointer;
-
   font-family: 'Special Elite';
   border-radius: 2.5px;
+  box-shadow: 15px;
+
 }
 
 .btnResume:hover

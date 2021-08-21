@@ -15,10 +15,6 @@
   <link href='https://fonts.googleapis.com/css?family=PT Mono' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
 
-
-
-  
-
 	<link rel="stylesheet"   
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	 crossorigin="anonymous">
@@ -73,38 +69,44 @@
   
 
 <div class = "container">
-  <img src="wall.png" id = "wall">   
+  
+  <img src="wall.png" id = "wall"> 
+  <img src="corkboard.png" id = "corkboard"> 
+  <img src="clock.png" id = "clock"> 
+  <img src="clockhand.png" id = "clockHourHand"> 
+  <img src="clockhand.png" id = "clockMinHand"> 
   <img src="desk.png" id = "desk">
   <img src="trashcan.png" id = "trashcan">
   <img src="chair.png" id = "chair">
-    <div id ="outside"></div>
-  <img src="window.png" id = "window">
+  <img src="pencilcan.png" id = "pencilcan">
+  <img src="stickynote.png" id = "stickynote">
+
+  <section id = "windows">
+      <img src="daylight.png"  id = "outside">
+  </section>
+      <img src="window.png" id = "window">
+
   <img src="stairs.png" id = "stairs"> 
 
   
-  
-
   <img src="computer.png" id = "computer">
-    <div id ="screen">
-          <img src="favicon.png" id = "screenIcon">
-    </div>
-    <div id ="powerButton"></div>
-
+  <div id ="screen">
+    <img src="favicon.png" id = "screenIcon">
+  </div>
+  <div id ="powerButton"></div>
     
   <img src="bookshelf.png" id = "bookshelf">
   <img src="picture.png" id = "picture">
-
   <img src="lightOff.png" id = "light">
-    <img src="lightbulb.png" id = "lightbulb">
-
   <img src="blinds.png" id = "blinds">
-   <img src="plant.png" id = "plant">
+  <img src="plant.png" id = "plant">
 
 </div>
 
+
 <div id = "switch">
-  <button id = "on">On</button>
-  <button id = "off">Off</button>
+  <button id = "on" onclick="light(1)">On</button>
+  <button id = "off" onclick="light(0)">Off</button>
 <div>
 
 </section>

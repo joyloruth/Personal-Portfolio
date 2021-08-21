@@ -69,4 +69,24 @@ var TxtType = function(el, toRotate, period) {
     };
 
 
+    function light(value){
+      var lightswitch;
+      var weather;
+
+        if(value == 0){
+          lightswitch = "lightOff.png";
+          weather = "daylight.png";
+          
+        }
+        else{
+          lightswitch = "lightOn.png";
+          weather = "nightsky.png";
+        }
+
+        document.getElementById("light").src=lightswitch;
+
+        document.getElementById("outside").src=weather;
+    }
+
+
     
