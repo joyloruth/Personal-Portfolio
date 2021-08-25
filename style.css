@@ -47,12 +47,19 @@ html,body
        -o-animation: moveUp 2.0s ease;
           animation: moveUp 2.0s ease; 
 }
+
 #onthewall{
   position: absolute;
       left: 270px;
     bottom: 15px;
      width: 450px;
     height: 450px;
+}
+
+
+@media screen and (max-width: 450px) 
+{
+
 }
 
 #pencilcan{
@@ -861,10 +868,8 @@ html,body
 /********BANNER SECTION*********************/
 #banner
 {
-  background-image: url("park.jpg");
   height: 93vh;
   background-size: cover;
-  font-weight: bold;
   padding-top: 100px;
   padding-bottom: 80px;
   margin-left: auto;
@@ -964,7 +969,7 @@ html,body
 #about
 {
   background-image: radial-gradient(#05293a, #010e20);
-  clip-path: polygon(0 15%, 100% 0, 100% 95%, 0 95%);
+  /*clip-path: polygon(0 15%, 100% 0, 100% 95%, 0 95%);*/
   padding-top: 100px;
   color:#ffffff;
   font-family: "Special Elite";
@@ -1002,7 +1007,7 @@ html,body
   background-size: cover;
   overflow-y: scroll;
   position: relative;
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  /*clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);*/
 }
 
 .port-title
@@ -1055,7 +1060,7 @@ html,body
 #contact
 {
   background-image: linear-gradient(to right,  #010a14,#02203c); 
-  clip-path: polygon(0 7%, 95% 0, 90% 95%, 0 80%);
+  /*clip-path: polygon(0 7%, 95% 0, 90% 95%, 0 80%);*/
   padding-top: 20px;
   color:#02203c;
   font-family: monospace;
@@ -1298,12 +1303,12 @@ html,body
 {
   text-decoration: none;
   color:rgba(48, 243, 243, 0.473);
-  background-color: rgba(0, 255, 255, 0);;
+  background-color: rgba(0, 255, 255, 0);
   font-size: 15px;
 }
 
 /********FOOTER SECTION*********************/
-#footer
+/*#footer
 {
   background-image: linear-gradient(to right,  #010a14,#02203c);
   position: sticky;
@@ -1320,4 +1325,21 @@ html,body
   padding: 12px;
   font-family: 'Special Elite';
   font-size: 18px;
+} */
+
+
+
+
+
+@media screen and (max-width: 450px) {
+  
+}
+
+@media screen and (max-width: 450px) {
+
+  #banner{
+    display: none;
+
+  }
+
 }
