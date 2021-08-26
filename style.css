@@ -1,14 +1,14 @@
 html,body
 {
+  box-sizing: border-box;
   background-image: 
-    linear-gradient(rgba(0,0,0,0.05) 50%, 0, transparent 100%), 
+    linear-gradient(rgba(0,0,0,0) 50%, 0, transparent 100%), 
     linear-gradient(-75deg, #0cc, #066);
-  background-size: .5em .5em, 80% 80%;
-  transition: background-color 2s ease-in;
+  /*background-size: .5em .5em, 80% 80%;
+  transition: background-color 2s ease-in;*/
   scroll-behavior: smooth;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0;
 }
 
 #preload{
@@ -28,24 +28,24 @@ html,body
   animation-iteration-count: 1,1;
   animation-fill-mode: forwards;
   -webkit-animation: fadetoblack, makevisible;
-  -moz-animation: fadetoblack, makevisible; 
+  -moz-animation: fadetoblack, makevisible;
 }
 
-#door{
-  background-color: blue;
-  }
+
 
 #desk{
   position: absolute;
-    bottom: 0;
-     width:355px;
-      left:400px;
-
+  bottom: 0;
+  width:355px;
+  left:400px;
   -webkit-animation: moveUp 2.0s ease;
      -moz-animation: moveUp 2.0s ease;
       -ms-animation: moveUp 2.0s ease;
        -o-animation: moveUp 2.0s ease;
           animation: moveUp 2.0s ease; 
+  justify-content: center;
+  align-items: center;
+  z-index: 18;
 }
 
 #onthewall{
@@ -56,13 +56,15 @@ html,body
     height: 450px;
 }
 
+@media screen and (max-width: 0px) {
 
-@media screen and (max-width: 450px) 
-{
+  #banner{
+    display: none;
+  }
 
 }
 
-#pencilcan{
+/*#pencilcan{
   position: absolute;
        top: 395px;
      width: 40px;
@@ -74,19 +76,31 @@ html,body
       -ms-animation: moveDown 2.0s ease;
        -o-animation: moveDown 2.0s ease;
           animation: moveDown 2.0s ease; 
-}
+}*/
 
 #chair{
   position: absolute;
-    bottom: -35px;
+    bottom: 0px;
       left: 530px;
-    height: 210px;
-     width: 175px;
-  -webkit-animation: moveUp 3.5s ease;
-     -moz-animation: moveUp 3.5s ease;
-      -ms-animation: moveUp 3.5s ease;
-       -o-animation: moveUp 3.5s ease;
-          animation: moveUp 3.5s ease; 
+    height: 180px;
+     width: 135px;
+     z-index: 65;
+     
+  -webkit-animation: moveRight 3.6s ease;
+     -moz-animation: moveRight 3.6s ease;
+      -ms-animation: moveRight 3.6s ease;
+       -o-animation: moveRight 3.6s ease;
+          animation: moveRight 3.6s ease; 
+}
+
+#chair:hover{
+  -webkit-animation: flip 1.6s ease alternate-reverse infinite;
+     -moz-animation: flip 1.6s ease alternate-reverse infinite;
+      -ms-animation: flip 1.6s ease alternate-reverse infinite;
+       -o-animation: flip 1.6s ease alternate-reverse infinite;
+          animation: flip 1.6s ease alternate-reverse infinite; 
+          transition: all 1s ease;
+
 }
 
 #computer{
@@ -95,7 +109,7 @@ html,body
     height: 120px;
     bottom: 160px;
       left: 500px;
-   
+   z-index: 25;
 
   -webkit-animation: moveUp 2.0s ease;
      -moz-animation: moveUp 2.0s ease;
@@ -151,6 +165,19 @@ html,body
        -o-animation: moveRight 2s ease;
           animation: moveRight 2s ease;
 }
+
+#floor{
+   background-image: radial-gradient(#05293a, #010e20);
+   width: 100%;
+   height: 30px;
+   bottom:0;
+   position: absolute;
+   z-index: 8;
+   
+
+}
+
+
 
 #outside{
   position: absolute;
@@ -299,6 +326,8 @@ html,body
           animation: spin 1s ease;
           animation-fill-mode: forwards;
           -webkit-animation-fill-mode: forwards;
+          -webkit-transition: all 1s;
+                  transition: all 1s; 
 }
 
 #trashcan{
@@ -307,6 +336,7 @@ html,body
   position: absolute;
   bottom: 0px;
   left:315px;
+  z-index: 18;
   -webkit-animation: moveRight 3.5s ease;
      -moz-animation: moveRight 3.5s ease;
       -ms-animation: moveRight 3.5s ease;
@@ -338,6 +368,7 @@ html,body
   left:515px;
   background-blend-mode: luminosity;
   border-radius: 2px;
+  z-index: 31;
   -webkit-animation: screenOn 2s ease-in;
      -moz-animation: screenOn 2s ease-in;
       -ms-animation: screenOn 2s ease-in;
@@ -354,6 +385,7 @@ html,body
   left:123px;
   top:73px; 
   display: flex;
+  z-index: 23;
   justify-content: center;
   align-items: center;
   margin:0;
@@ -372,6 +404,7 @@ html,body
   width:145px;
   left:313px;
   top:73px; 
+  z-index: 22;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,6 +445,8 @@ html,body
   bottom: 0;
   width:450px;
   height: 450px;
+  z-index: 16;
+  
   -webkit-animation: moveDown .5s ease;
      -moz-animation: moveDown .5s ease;
       -ms-animation: moveDown .5s ease;
@@ -426,6 +461,7 @@ html,body
   width:170px;
   left:110px;
   top:60px;
+  z-index: 19;
   -webkit-animation: moveLeft 3.25s ease;
      -moz-animation: moveLeft 3.25s ease;
       -ms-animation: moveLeft 3.25s ease;
@@ -439,6 +475,7 @@ html,body
      width: 170px;
      right:-20px;
      top:60px;
+     z-index: 20;
   -webkit-animation: moveRight 3.25s ease;
      -moz-animation: moveRight 3.25s ease;
       -ms-animation: moveRight 3.25s ease;
@@ -446,7 +483,7 @@ html,body
           animation: moveRight 3.25s ease;
 
 }
-/*turns on comupter power*/
+/*turns on comupter switch*/
 #powerButton{
   position: absolute;
   height: 9px;
@@ -454,10 +491,10 @@ html,body
   left: 615px;
   bottom: 210px;
   border-radius: 5px;
-  z-index: 0;
-  -webkit-animation: powerButtonOn .7s ease-in-out infinite;
-     -moz-animation: powerButtonOn .7s ease-in-out infinite;
-          animation: powerButtonOn .7s ease-in-out infinite;
+  z-index: 91;
+  -webkit-animation: switchButtonOn .7s ease-in-out infinite;
+     -moz-animation: switchButtonOn .7s ease-in-out infinite;
+          animation: switchButtonOn .7s ease-in-out infinite;
           animation-fill-mode: forwards;
           animation-delay: 4s;
 }
@@ -470,6 +507,7 @@ html,body
   margin: auto;
   left:13px;
   top:3px;
+  z-index: 24;
   -webkit-animation: makevisible,flip;
      -moz-animation: makevisible,flip;
       -ms-animation: makevisible,flip;
@@ -512,6 +550,7 @@ html,body
   margin: auto;
   left:40px;
   top:4px;
+  z-index: 21;
   -webkit-animation: makevisible,flip;
      -moz-animation: makevisible,flip;
       -ms-animation: makevisible,flip;
@@ -531,8 +570,9 @@ html,body
 #plant{
   position: absolute;
   bottom: 0px;
-  left:30px;
+  left:37px;
   width:100px;
+  z-index: 41;
   -webkit-animation: moveLeft 3.25s ease;
      -moz-animation: moveLeft 3.25s ease;
       -ms-animation: moveLeft 3.25s ease;
@@ -666,21 +706,21 @@ html,body
          background-blend-mode: luminosity;}
 }
 
-/*turns on computer powerbutton*/
-@keyframes powerButtonOn{
+/*turns on computer switchbutton*/
+@keyframes switchButtonOn{
  from { background-color:rgba(0, 0, 0, 0);}
    to { background-color:rgb(155, 238, 0);
         box-shadow: 1px 1px 2px rgb(214, 252, 0), 0 0 25px rgb(156, 175, 148), 0 0 5px white;}
 }
-@-webkit-keyframes powerButtonOn{
+@-webkit-keyframes switchButtonOn{
  from { background-color:rgba(0, 0, 0, 0);}
    to { background-color: rgb(47, 248, 255);}
 }
-@-moz-keyframes powerButtonOn{
+@-moz-keyframes switchButtonOn{
  from { background-color:rgba(0, 0, 0, 0);}
    to { background-color: rgb(47, 248, 255);}
 }
-@-o-keyframes powerButtonOn{
+@-o-keyframes switchButtonOn{
  from { background-color:rgba(0, 0, 0, 0);}
    to { background-color: rgb(47, 248, 255);}
 }
@@ -706,11 +746,10 @@ html,body
 
 
 #favicon{
-  width:200px;
-  height:200px;
+  width:300px;
+  height:350px;
   position: absolute;
-  top:40%;
-  animation-delay: spin 2s ease;
+  animation: spin 2s ease;
 }
 
 #logo{
@@ -823,11 +862,14 @@ html,body
 
 .navbar{ 
   font-size: 20px;
-  background-color: rgba(0, 0, 0, 0);
-  top: 0;
+  background-color: rgb(0, 0, 0);
+  top:0;
+  padding: 0px;
+
+  /*top: 0;
   position: absolute;
   transition: 1s all ease-in;
-  left:630px;
+  left:630px; */
   -webkit-animation: all 1s ease-in;
      -moz-animation: all 1s ease-in;
       -ms-animation: all 1s ease-in;
@@ -868,14 +910,19 @@ html,body
 /********BANNER SECTION*********************/
 #banner
 {
-  height: 93vh;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  height: 90vh;
+    background: 
+    linear-gradient(
+      rgba(214, 214, 214, 0.856), 
+      rgba(104, 105, 105, 0.856)
+    ), url('brick.jpeg');
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
   align-content: center;
-  top:0;
+  width:100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .header-title2
@@ -928,6 +975,7 @@ html,body
   position: absolute;
   left:20px;
   top:200px;
+  z-index: 66;
   border-radius: 3px;
   box-shadow: 10px black;
 }
@@ -985,8 +1033,6 @@ html,body
   font-weight: bold;
   padding-top: 10px;
   text-shadow: 2px 2px #000000;
-  border-left: 2vmin solid rgba(245, 247, 247, 0.158);
-  border-right: 2vmin solid rgba(245, 247, 247, 0.158);
 }
 
 .typewrite:hover
@@ -1000,7 +1046,7 @@ html,body
 #portfolio
 {
   margin-right: auto;
-  background-image: url('bluekeyboard.jpg'),radial-gradient(#28a3dd, #0d7751);
+  background-image: url(''),radial-gradient(#28a3dd, #0d7751);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1330,16 +1376,3 @@ html,body
 
 
 
-
-@media screen and (max-width: 450px) {
-  
-}
-
-@media screen and (max-width: 450px) {
-
-  #banner{
-    display: none;
-
-  }
-
-}
