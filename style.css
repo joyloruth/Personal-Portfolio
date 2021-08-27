@@ -4,8 +4,8 @@ html,body
   background-image: 
     linear-gradient(rgba(0,0,0,0) 50%, 0, transparent 100%), 
     linear-gradient(-75deg, #0cc, #066);
-  /*background-size: .5em .5em, 80% 80%;
-  transition: background-color 2s ease-in;*/
+  background-size: .5em .5em, 80% 80%;
+  transition: background-color 2s ease-in;
   scroll-behavior: smooth;
   align-content: center;
   margin:0;
@@ -18,17 +18,20 @@ html,body
   top:0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 999;
+  align-items: center; 
+  z-index: 999; 
   background-color: black;
-  animation: fadetoblack, makevisible;
-  animation-duration: 1s, 1s;
-  animation-delay: 10s,12s;
-  animation-timing-function: ease,ease;
-  animation-iteration-count: 1,1;
+  -webkit-animation: fadetoblack, makevisible,displayNone;
+     -moz-animation: fadetoblack, makevisible;
+      -ms-animation: fadetoblack, makevisible;
+       -o-animation: fadetoblack, makevisible;
+          animation: fadetoblack, makevisible,displayNone;
+
+  animation-duration: 10s, 1s, 1s;
+  animation-delay: 3s,1s;
+  animation-timing-function: ease,ease,ease;
+  animation-iteration-count: 1,1,1;
   animation-fill-mode: forwards;
-  -webkit-animation: fadetoblack, makevisible;
-  -moz-animation: fadetoblack, makevisible;
 }
 
 
@@ -244,43 +247,192 @@ html,body
           animation: moveUp 3s ease;
 }
 
-#clockHourHand{
+.rocketpreloader {
+  width:600px;
+  height:600px;
   position: absolute;
-  height:45px;
-  width:45px;
-  left:461px;
-  top:220px;
-  animation: moveUp, spin;
-  -webkit-animation: moveUp, spin;
-  -moz-animation:  moveUp, spin;
-  animation-duration: 3s,60s;
-  -webkit-animation-duration: 3s,60s;
-  animation-timing-function: ease,linear;
-  animation-iteration-count: 1,infinite;
-  animation-delay: 0s,4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: skycolor, end, fadetoblack ;
+  animation-duration: 5s, 1s,2s;
+  animation-delay: 0s, 13s,15s; 
+  animation-timing-function: ease, ease,ease ;
+  animation-iteration-count: 3,1,1;
+  z-index: 999;
+}
+
+.rocketpreloader h1{
+  opacity:100% ;
+  position: absolute;
+  top:10%;
+  animation: namesize 5s ease-in-out;
+  animation-delay: 6s; 
+  font-size:  0px;
+} 
+.cloud1{
+  height: 380px;
+  animation-name: fly, cloudsize,cloudfall, end;
+  animation-duration: 0s, 4s, 2s;
+  animation-delay: 1s, 4s,12s; 
+  animation-timing-function: ease, ease ;
+  animation-iteration-count: 3, 1,infinite;
+  animation-direction: normal;
+  position: relative;
+  animation-fill-mode: forwards;
+  top:15%;
+  right:80px;
+  background-color: blue;  
+}
+.cloud2{
+  height: 345px;
+  animation-name: fly, cloudsize, cloudfall,end;
+  animation-duration: 0s, 5s,2s, 1s;
+  animation-delay: 0s, 3s, 4s, 12s; 
+  animation-timing-function: ease, ease ;
+  animation-iteration-count: 1, 1, infinite;
+  position: relative;
+  animation-fill-mode: forwards;
+  top:5%;
+  right:40; 
+}
+.cloud6{
+  height: 275px;
+  animation-name: fly, cloudsize,cloudfall,end ;
+  animation-duration: 1s, 5s,4s;
+  animation-delay: 0s, 1s; 
+  animation-timing-function: ease, ease ;
+  animation-iteration-count: 1, 1,infinite;
+  animation-direction: normal;
+  position: relative;
+  animation-fill-mode: forwards;
+  top:15%;
+  left:20px;
+} 
+.cloud5{
+  height: 400px;
+  animation-name: fly, cloudsize,cloudfall,end ;
+  animation-duration: 0s, 5s,3s;
+  animation-delay: 0s, 4s; 
+  animation-timing-function: ease, ease ;
+  animation-iteration-count: 1, 1,25, 1;
+  animation-direction: normal;
+  position: relative;
+  animation-fill-mode: forwards;
+  top:25%;
+  right:30;
+} 
+.cloud3{
+  height: 430px;
+  animation-name: fly, cloudsize,cloudfall,end ;
+  animation-duration: 0s, 1s,5s;
+  animation-delay: 0s, 3s; 
+  animation-timing-function: ease, ease ;
+  animation-iteration-count: 1, 1,25,end;
+  animation-direction: normal;
+  position: relative;
+  animation-fill-mode: forwards;
+  top: 0;
+  right:50;
+  z-index: -1;
+}
+.cloud4{
+  height: 300px;
+  animation-name: fly, cloudsize,cloudfall, end ;
+  animation-duration: 0s, 1s,2s;
+  animation-delay: 0s, 7s;
+  animation-timing-function: ease, ease ;
+  animation-iteration-count: 1, 1,infinite;
+  animation-direction: normal;
+  position: relative;
+  animation-fill-mode: forwards;
+  top:25%;
+  left:50;
+} 
+
+
+#elevator{
+  height: 500px;
+  animation-name: rotate, fly, elevatorsize, drop,elevatorsizebig,end;
+  animation-duration: 1s, 3s, 2s,.5s, 2s,2s;
+  animation-delay: 0s, 1s, 5s, 8s, 12s, 13s,1s; 
+  animation-timing-function: ease, ease, ease, ease;
+  animation-iteration-count: 1, 1, 1, 45, 1;
+  animation-direction: alternate;
+  position: absolute;
   animation-fill-mode: forwards;
 }
 
-#clockMinHand{
-  position: absolute;
-  height:30px;
-  width:30px;
-  left:471px;
-  top:226px;
-  -webkit-animation: moveUp, spin;
-     -moz-animation: moveUp, spin;
-      -ms-animation: moveUp, spin;
-       -o-animation: moveUp, spin;
-          animation: moveUp, spin;
-  -webkit-animation-duration:  3s,10s;
-     -moz-animation-duration:  3s,10s;
-       -o-animation-duration:  3s,10s;
-          animation-duration:  3s,10s;
-          animation-delay: 0s,4s;
-          animation-timing-function: ease,linear;
-          animation-iteration-count: 1,infinite;
-          animation-fill-mode: forwards;
+.fire{
+  height: 1px;
+  animation-name: makevisible,rotate,end;
+  animation-duration:2s,.4s,1s;
+  animation-delay: 8s, 12s; 
+  animation-timing-function: ease ;
+  animation-iteration-count:normal,25,1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: 160px;
+  z-index: 999;
 }
+
+/*rocket preloader animations*/
+
+@keyframes fadetoblack
+{
+  from {  background-color: rgb(106, 29, 169);}
+    to { background-color: rgb(1, 3, 4);}
+}
+@keyframes skycolor
+{
+  from { background-color: rgb(151, 210, 214);}
+    to { background-color: rgb(7, 103, 193);}
+}
+@keyframes fly
+{ 
+  0%, 100% {transform: translateY(0px);}
+  50% {transform: translateY(-600px);}
+}
+@keyframes elevatorsizebig
+{
+  from {height:200px;}
+    to {height:2400px;}
+}
+@keyframes elevatorsize
+{
+  from {height:500px;}
+    to {height:200px;}
+}
+@keyframes cloudsize
+{
+  from { height:75%; }
+    to { height:15%; }
+}
+
+@keyframes cloudfall
+{
+  from { transform: translateY(-800%);}
+    to { transform: translateY(800%);}
+}
+@keyframes makevisible
+{
+  from { height: 0%;}
+    to { height: 15%;}
+}
+@keyframes rotate
+{ 
+  100%{ transform: rotate(360deg);}
+}
+@keyframes end
+{
+  from { visibility: visible;}
+    to { visibility: hidden;}
+}
+
+
+
+
 
 #corkboard{
   position: absolute;
@@ -494,6 +646,7 @@ html,body
   z-index: 91;
   -webkit-animation: switchButtonOn .7s ease-in-out infinite;
      -moz-animation: switchButtonOn .7s ease-in-out infinite;
+       -o-animation: switchButtonOn .7s ease-in-out infinite;
           animation: switchButtonOn .7s ease-in-out infinite;
           animation-fill-mode: forwards;
           animation-delay: 4s;
@@ -638,28 +791,20 @@ html,body
 
 /*Moves item upward*/
 @keyframes moveUp{
-  0%{ transform: translateY(500px);}   
-  100%{
-    transform: translateY(-50x);
-  }
+    0% { transform: translateY(500px);}   
+  100% { transform: translateY(-50x);}
 }
 @-webkit-keyframes moveUp{
-  0%{
-    transform: translateY(500px);
-  }
-
-  100%{
-    transform: translateY(-50x);
-  }
+    0% { transform: translateY(500px);}
+  100% { transform: translateY(-50x);}
 }
 @-moz-keyframes moveUp{
-  0%{
-    transform: translateY(500px);
-  }
-
-  100%{
-    transform: translateY(-50x);
-  }
+    0%{ transform: translateY(500px);}
+  100%{ transform: translateY(-50x);}
+}
+@-o-keyframes moveUp{
+    0%{ transform: translateY(500px);}
+  100%{ transform: translateY(-50x);}
 }
 
 /*move down*/
@@ -684,24 +829,25 @@ html,body
 @keyframes screenOn{
   from { background-color:black;}
     to { background-color: rgba(111, 207, 214, 0.742);
-      background-blend-mode: luminosity;
-      box-shadow: 1px 1px 2px rgba(219, 255, 87, 0.308), 0 0 25px rgb(245, 245, 245), 0 0 5px white;}
+         background-blend-mode: luminosity;
+         box-shadow: 1px 1px 2px rgba(162, 147, 250, 0.637), 0 0 25px rgb(192, 192, 245), 0 0 5px white;}
+
 }
 @-webkit-keyframes screenOn{
   from { background-color:black;}
-    to { background-color: rgba(255, 255, 255, 0.742);
+    to { background-color: rgba(111, 207, 214, 0.742);
          background-blend-mode: luminosity;
          box-shadow: 1px 1px 2px rgba(162, 147, 250, 0.637), 0 0 25px rgb(192, 192, 245), 0 0 5px white;}
 }
 @-moz-keyframes screenOn{
   from { background-color:black;}
-    to { background-color: rgba(255, 255, 255, 0.742);
-         box-shadow: 1px 1px 2px rgba(162, 147, 250, 0.637), 0 0 25px rgb(192, 192, 245), 0 0 5px white;
-         background-blend-mode: luminosity;}
+    to { background-color: rgba(111, 207, 214, 0.742);
+         background-blend-mode: luminosity;
+         box-shadow: 1px 1px 2px rgba(162, 147, 250, 0.637), 0 0 25px rgb(192, 192, 245), 0 0 5px white;}         
 }
 @-o-keyframes screenOn{
   from { background-color:black;}
-    to { background-color: rgba(255, 255, 255, 0.742);
+    to { background-color: rgba(111, 207, 214, 0.742);
          box-shadow: 1px 1px 2px rgba(162, 147, 250, 0.637), 0 0 25px rgb(192, 192, 245), 0 0 5px white;
          background-blend-mode: luminosity;}
 }
@@ -746,10 +892,10 @@ html,body
 
 
 #favicon{
-  width:300px;
-  height:350px;
+  width:175px;
+  height:200px;
   position: absolute;
-  animation: spin 2s ease;
+  animation: spin 2s ease alternate-reverse 3;
 }
 
 #logo{
@@ -772,7 +918,10 @@ html,body
   from { display: flex; }
     to { display: none; }
 }
-
+@-o-keyframes displayNone{
+  from { display: flex; }
+    to { display: none; }
+}
 /*make visible*/
 @keyframes makevisible {
   from { visibility: hidden; }
@@ -913,9 +1062,9 @@ html,body
   height: 90vh;
     background: 
     linear-gradient(
-      rgba(214, 214, 214, 0.856), 
-      rgba(104, 105, 105, 0.856)
-    ), url('brick.jpeg');
+      rgba(214, 214, 214, 0.068), 
+      rgba(104, 105, 105, 0.02)
+    ), url('');
   background-size: contain;
   margin-left: auto;
   margin-right: auto;
@@ -985,28 +1134,20 @@ html,body
 /*fades background to black*/
 @keyframes fadetoblack
 {
-  from
-  {
-     background-color: rgb(0, 0, 0);
-  }
-
-  to
-  {
-    background-color: rgba(0, 0, 0, 0);
-  }
+  from { background-color: rgb(0, 0, 0);}
+    to { background-color: rgba(255, 255, 255, 0);}
 }
+@-webkit-keyframes fadetoblack
+{
+  from { background-color: rgb(0, 0, 0);}
+    to { background-color: rgba(0, 0, 0, 0);}
+}
+
 
 @keyframes fadeInMenuFont
 {
-  from
-  {
-     color: rgba(0, 0, 0, 0);
-  }
-
-  to
-  {
-    color: rgba(206, 248, 250, 0.733);
-  }
+  from { color: rgba(0, 0, 0, 0);}
+  to { color: rgba(206, 248, 250, 0.733);}
 }
 
 
@@ -1046,14 +1187,14 @@ html,body
 #portfolio
 {
   margin-right: auto;
-  background-image: url(''),radial-gradient(#28a3dd, #0d7751);
+  /*background-image: url(''),radial-gradient(#28a3dd, #0d7751);*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: scroll;
   position: relative;
-  /*clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);*/
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
 .port-title
@@ -1075,8 +1216,7 @@ html,body
   border-style: outset;
   border-color: rgba(100, 250, 217, 0.281);
   margin-top: 10px;
-  box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.856);
-  
+  box-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.856);  
 }
 
 .card:hover
@@ -1106,7 +1246,7 @@ html,body
 #contact
 {
   background-image: linear-gradient(to right,  #010a14,#02203c); 
-  /*clip-path: polygon(0 7%, 95% 0, 90% 95%, 0 80%);*/
+  clip-path: polygon(0 7%, 95% 0, 90% 95%, 0 80%);
   padding-top: 20px;
   color:#02203c;
   font-family: monospace;
@@ -1373,6 +1513,35 @@ html,body
   font-size: 18px;
 } */
 
+#animations{
+  background-color: red;
+  height:400px;
+  width:100%;
+}
+
+#refresh_page_rocket{
+  top:0;
+  width: 7%;
+  animation: fly 1s ease alternate infinite;
+}
+
+/*Moves item upward*/
+@keyframes fly{
+    0% { transform: translateY(20px);}   
+  100% { transform: translateY(-800x);}
+}
+@-webkit-keyframes fly{
+    0% { transform: translateY(20);}
+  100% { transform: translateY(-800x);}
+}
+@-moz-keyframes fly{
+    0%{ transform: translateY(50px);}
+  100%{ transform: translateY(-50x);}
+}
+@-o-keyframes fly{
+    0%{ transform: translateY(50px);}
+  100%{ transform: translateY(-50x);}
+}
 
 
 
