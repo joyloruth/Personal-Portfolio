@@ -74,13 +74,13 @@ var TxtType = function(el, toRotate, period) {
       var weather;
 
         if(value == 0){
-          lightswitch = "lightOff.png";
-          weather = "daylight.png";
+          lightswitch = "office_images/lightOff.png";
+          weather = "office_images/daylight.png";
           
         }
         else{
-          lightswitch = "lightOn.png";
-          weather = "nightsky.png";
+          lightswitch = "office_images/lightOn.png";
+          weather = "office_images/nightsky.png";
         }
 
         document.getElementById("light").src=lightswitch;
