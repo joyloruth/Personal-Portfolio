@@ -1871,10 +1871,10 @@ p{
           animation: flip 10.0s ease-in-out infinite;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .cluster{
       grid-template-columns: 1fr;
-      grid-template-rows: .25fr .5fr 1fr .5fr 1fr .5fr 1fr 0fr 0fr .25fr;
+      grid-template-rows: .25fr 0fr 1fr .0fr 1fr .0fr 1fr 0fr 0fr .25fr;
       grid-template-areas: "projects-title"
                            "content1"
                            "content2"
@@ -1885,23 +1885,24 @@ p{
                            "rtbar"
                            "ltbar"
                            "ani-title";
-
+    grid-gap: 0px;
+    padding: 0px;
       
     }
    #content1{
-     border-radius: 16px;
+     border-radius: 0px;
    }
 
    #content2{
-     border-radius: 16px;
+     border-radius: 0px;
    }
 
    #content3{
-     border-radius: 16px;
+     border-radius: 0px;
    }
 
    #content4{
-     border-radius: 16px;
+     border-radius: 0px;
    }
 
    #content5{
@@ -1909,15 +1910,15 @@ p{
    }
 
    #content6{
-     border-radius: 16px;
+     border-radius: 0px;
    }
 
    #ltbar{
-     background-color: rebeccapurple;
+     
    }
 
    #rtbar{
-     background-color: tomato;
+     
    }
 
 
@@ -1992,7 +1993,7 @@ p{
              "contact-ltbar"
              "contact-title"
              "contact-info"
-            "contact-pic"
+            
              "contact-rtbar"; 
     overflow: hidden;
 
