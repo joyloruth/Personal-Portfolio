@@ -32,6 +32,7 @@ html,body
 {
   box-sizing: border-box;
   background-image: linear-gradient(to left bottom, #95b0b4, #99b6ba, #9dbbc0, #a1c1c6, #a5c7cc);
+  
   scroll-behavior: smooth;
   align-content: center;
   margin:0;
@@ -969,7 +970,7 @@ html,body
       -ms-animation: moveDown 1s ease;
        -o-animation: moveDown 1s ease;
           animation: moveDown 1s ease;
-  color: #95B0B4;
+  color: #A8EB12;
   font-family: poppins;
   font-size: 18px;
 }
@@ -1090,8 +1091,9 @@ html,body
 {
   height:100vh;
   display: grid; 
-  background: linear-gradient(90deg, #A8EB12 50%, rgb(4, 84, 95) 0%);
-  background-color: rgb(4, 84, 95);
+  
+  /*background: linear-gradient(90deg, #A8EB12 50%, rgb(4, 84, 95) 0%);
+  background-color: rgb(4, 84, 95); */
   grid-template-columns: .4fr 1.25fr 1fr 1fr .4fr;
   grid-template-rows: 1fr .25fr .75fr;
   grid-template-areas : "aboutme-ltbar aboutme-title aboutme-title aboutme-title aboutme-rtbar"
@@ -1632,7 +1634,7 @@ z-index: 900;
   background: linear-gradient(to bottom right,
       rgba(59, 61, 61, 0), 
       rgba(22, 22, 22, 0)
-    ), url('jobapp.png');
+    ), url('comicbook.png');
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background-repeat: no-repeat;
@@ -1698,7 +1700,7 @@ z-index: 900;
   background: linear-gradient(to bottom right,
       rgba(111, 226, 218, 0), 
       rgba(217, 217, 217, 0)
-    ), url('comicbook.png');
+    ), url('jobapp.png');
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   -webkit-box-shadow: inset 0 3px 16px #4b585a;
