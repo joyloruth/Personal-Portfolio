@@ -7,26 +7,19 @@
 }
 
 ::-webkit-scrollbar-track{
- background-color: rgb(4, 84, 95);
+ background-color: rgb(168, 204, 209);
 }
 
 ::-webkit-scrollbar-thumb{
  background-color: #A8EB12;
  border-radius: 10px 500px 60px;
- 
 }
 
 ::-webkit-scrollbar-thumb:hover{
  background-color: rgb(195, 240, 98);
  border-radius: 10px 50px 6px;
- 
 }
 
-
-#aboutpic{
-  -webkit-animation: moveRight 2s ease-in;
-          animation: moveRight 2s ease-in;
-}
 
 html,body
 {
@@ -39,29 +32,14 @@ html,body
   color: #444939;
 }
 
-#preload{
-  width:100%;
-  height:100vh;
-  position: fixed;
-  top:0;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  z-index: 999; 
-  background-color: black;
-  -webkit-animation: fadetoblack, makevisible,displayNone;
-     -moz-animation: fadetoblack, makevisible;
-      -ms-animation: fadetoblack, makevisible;
-       -o-animation: fadetoblack, makevisible;
-          animation: fadetoblack, makevisible,displayNone;
-  animation-duration: 10s, 1s, 1s;
-  animation-delay: 3s,1s;
-  animation-timing-function: ease,ease,ease;
-  animation-iteration-count: 1,1,1;
-  animation-fill-mode: forwards;
+
+
+#aboutpic{
+  background-color: rgba(112, 192, 20, 0);
+  height:300px;
+  -webkit-animation: moveRight 2s ease-in;
+          animation: moveRight 2s ease-in;
 }
-
-
 
 #desk{
   position: absolute;
@@ -78,13 +56,7 @@ html,body
   z-index: 18;
 }
 
-#onthewall{
-  position: absolute;
-  left: 270px;
-  bottom: 15px;
-  width: 450px;
-  height: 450px;
-}
+
 
 @media screen and (max-width: 0px) {
   #banner{ display: none; }
@@ -94,7 +66,7 @@ html,body
   position: absolute;
     bottom: 0px;
       left: 530px;
-    height: 180px;
+    height: 1870px;
      width: 135px;
    z-index: 65;     
   -webkit-animation: moveRight 3.6s ease;
@@ -127,69 +99,24 @@ html,body
           animation: moveUp 2.0s ease; 
 }
 
-#stickynote{
-  position: absolute;
-    height: 30px;
-     width: 30px;
-     right: 14px;
-       top: 300px;
-  -webkit-animation: moveDown 3s ease-in-out;
-     -moz-animation: moveDown 3s ease-in-out;
-      -ms-animation: moveDown 3s ease-in-out;
-       -o-animation: moveDown 3s ease-in-out;
-          animation: moveDown 3s ease-in-out;
-}
 
-#stickynote:hover{
-  -webkit-animation: noteFall 3s ease;
-     -moz-animation: noteFall 3s ease;
-      -ms-animation: noteFall 3s ease;
-       -o-animation: noteFall 3s ease;
-          animation: noteFall 3s ease;
-}
+
+
 
 #chair2{
-  -webkit-animation: moveRight 3.6s ease infinite alternate-reverse;
-     -moz-animation: moveRight 3.6s ease infinite alternate-reverse; 
+  -webkit-animation: moveLeft 3.6s ease infinite alternate-reverse;
+     -moz-animation: moveLeft 3.6s ease infinite alternate-reverse;
       -ms-animation: moveRight 3.6s ease infinite alternate-reverse; 
        -o-animation: moveRight 3.6s ease infinite alternate-reverse; 
-          animation: moveRight 3.6s ease infinite alternate-reverse; 
-}
-#window{
-  position: absolute;
-      left: 32px;
-       top: 118px;
-     width: 175px;
-  -webkit-animation: moveRight 2s ease;
-     -moz-animation: moveRight 2s ease;
-      -ms-animation: moveRight 2s ease;
-       -o-animation: moveRight 2s ease;
-          animation: moveRight 2s ease;
+          animation: moveLeft 3.6s ease infinite alternate-reverse; 
+
+width:180px;
+  
+  
 }
 
-#windows{
-  position: absolute;
-     width: 140px;
-       top: 130px;
-  overflow: hidden;
-    height: 275px;
-      left: 50px;
 
-  -webkit-animation: moveRight 2s ease;
-     -moz-animation: moveRight 2s ease;
-      -ms-animation: moveRight 2s ease;
-       -o-animation: moveRight 2s ease;
-          animation: moveRight 2s ease;
-}
 
-#floor{
-   background-image: radial-gradient(#05293a, #010e20);
-     width: 100%;
-    height: 30px;
-    bottom: 0;
-  position: absolute;
-   z-index: 8;
-}
 
 
 
@@ -211,70 +138,10 @@ html,body
           animation-delay: 2s;
 }
 
-#blinds{
-  position: absolute;
-  z-index: 3;
-  top:115px;
-  left:30px;
-  height:350px;
-  width:178px;
-  -webkit-animation: moveRight, pullBlinds;
-     -moz-animation: moveRight, pullBlinds;
-          animation: moveRight, pullBlinds;
-  animation-timing-function: ease, ease-in;
-  animation-duration: 2s, .5s;
-  animation-iteration-count: 1,1;
-  animation-fill-mode: forwards;
-  animation-delay: 0s,5s;
-  -webkit-animation-delay: 0s,6s;
-}
-
-#blinds:hover{
-  height:356px;
-}
-
-#bookshelf{
-  position: absolute;
-  height:100px;
-  width:125px;
-  left:26px;
-  top:160px;
-  -webkit-animation: moveDown 3s ease;
-     -moz-animation: moveDown 3s ease;
-      -ms-animation: moveDown 3s ease;
-       -o-animation: moveDown 3s ease;
-          animation: moveDown 3s ease;
-}
 
 
 
-/*.rocketpreloader {
-  width:600px;
-  height:600px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-name: skycolor, end, fadetoblack ;
-  animation-duration: 5s, 1s,2s;
-  animation-delay: 0s, 13s,15s; 
-  animation-timing-function: ease, ease,ease ;
-  animation-iteration-count: 3,1,1;
-  z-index: 999;
-} */
 
-/*
-@keyframes fadetoblack
-{
-  from {  background-color: rgb(106, 29, 169);}
-    to { background-color: rgb(1, 3, 4);}
-}
-@keyframes skycolor
-{
-  from { background-color: rgb(151, 210, 214);}
-    to { background-color: rgb(7, 103, 193);}
-}
-*/
 @keyframes fly
 { 
   0%, 100% {transform: translateY(0px);}
@@ -290,22 +157,7 @@ html,body
   from {height:500px;}
     to {height:200px;}
 }
-/*@keyframes cloudsize
-{
-  from { height:75%; }
-    to { height:15%; }
-}
 
-@keyframes cloudfall
-{
-  from { transform: translateY(-800%);}
-    to { transform: translateY(800%);}
-}
-@keyframes makevisible
-{
-  from { height: 0%;}
-    to { height: 15%;}
-} */
 @keyframes rotate
 { 
   100%{ transform: rotate(360deg);}
@@ -324,57 +176,9 @@ html,body
 
 
 
-#picture{
-  position: absolute;
-  height:150px;
-  width:120px;
-  top:10px;
-  background-size: 10px;
-  left:30px;
-  -webkit-animation: moveUp 1.75s ease;
-     -moz-animation: moveUp 1.75s ease;
-      -ms-animation: moveUp 1.75s ease;
-       -o-animation: moveUp 1.75s ease;
-          animation: moveUp 1.75s ease;
-}
-
-#picture:hover{
-  height: 175px;
-  width:150px;
-  -webkit-transition: all 1s;
-     -moz-transition: all 1s;
-       -o-transition: all 1s;
-          transition: all 1s;
-}
 
 
-#trashcan:hover{
-  -webkit-animation: spin 1s ease;
-     -moz-animation: spin 1s ease;
-      -ms-animation: spin 1s ease;
-       -o-animation: spin 1s ease;
-          animation: spin 1s ease;
-          animation-fill-mode: forwards;
-          -webkit-animation-fill-mode: forwards;
-          -webkit-transition: all 1s;
-                  transition: all 1s; 
-}
 
-#trashcan{
-  height: 70px;
-  width: 60px;
-  position: absolute;
-  bottom: 0px;
-  left:315px;
-  z-index: 18;
-  -webkit-animation: moveRight 3.5s ease;
-     -moz-animation: moveRight 3.5s ease;
-      -ms-animation: moveRight 3.5s ease;
-       -o-animation: moveRight 3.5s ease;
-          animation: moveRight 3.5s ease;
-          animation-fill-mode: forwards;
-          -webkit-animation-fill-mode: forwards;
-}
 
 #light{
   position: absolute;
@@ -460,13 +264,7 @@ html,body
        -o-animation: moveRight 1s ease;
           animation: moveRight 1s ease;
 }
-#bulletin{
-  position: absolute;
-  height:450px;
-  width:200px;
-  bottom:15px;
-  left:751px;
-}
+
 
 #wall{
   position: absolute;
@@ -512,22 +310,7 @@ html,body
           animation: moveRight 3.25s ease;
 
 }
-/*turns on comupter switch*/
-#powerButton{
-  position: absolute;
-  height: 9px;
-  width: 9px;
-  left: 615px;
-  bottom: 210px;
-  border-radius: 5px;
-  z-index: 91;
-  -webkit-animation: switchButtonOn .7s ease-in-out infinite;
-     -moz-animation: switchButtonOn .7s ease-in-out infinite;
-       -o-animation: switchButtonOn .7s ease-in-out infinite;
-          animation: switchButtonOn .7s ease-in-out infinite;
-          animation-fill-mode: forwards;
-          animation-delay: 4s;
-}
+
 
 /*appears logo on comupter screen*/
 #screenIcon{
@@ -573,42 +356,9 @@ html,body
           animation-fill-mode: forwards;
 }
 
-#screenIconLeft{
-  visibility: hidden;
-  position: absolute;
-  width:70px;
-  margin: auto;
-  left:40px;
-  top:4px;
-  z-index: 21;
-  -webkit-animation: makevisible,flip;
-     -moz-animation: makevisible,flip;
-      -ms-animation: makevisible,flip;
-       -o-animation: makevisible,flip;
-          animation: makevisible,flip;
-          animation-duration: .5s,2s;
-          animation-timing-function: ease-in-out,ease-in-out;
-          animation-direction: normal,alternate,alternate;
-          -webkit-animation-iteration-count: 1,infinite,infinite;
-          animation-iteration-count: 1,infinite,infinite;
-          animation-delay: 9.5s;
-          animation-fill-mode: forwards;
-}
 
 
-/*plant*/
-#plant{
-  position: absolute;
-  bottom: 0px;
-  left:37px;
-  width:100px;
-  z-index: 41;
-  -webkit-animation: moveLeft 3.25s ease;
-     -moz-animation: moveLeft 3.25s ease;
-      -ms-animation: moveLeft 3.25s ease;
-       -o-animation: moveLeft 3.25s ease;
-          animation: moveLeft 3.25s ease;
-}
+
 
 /*walk*/
 @keyframes walk{
@@ -696,11 +446,11 @@ html,body
   100% { transform: translateX(-300px); }
 }
 @-moz-keyframes walking{
-    0% { transform: translateX(300px); }
+    0% { transform: translateX(275px); }
   100% { transform: translateX(-300px); }
 }
 @-o-keyframes walking{
-    0% { transform: translateX(300px); }
+    0% { transform: translateX(275px); }
   100% { transform: translateX(-300px); }
 }
 
@@ -970,13 +720,13 @@ html,body
       -ms-animation: moveDown 1s ease;
        -o-animation: moveDown 1s ease;
           animation: moveDown 1s ease;
-  color: #A8EB12;
-  font-family: poppins;
+  color: #00525B;
+  font-family: Special Elite;
   font-size: 18px;
 }
 
 .menu:hover{
-  color:rgb(4, 84, 95);
+  color:rgb(5, 130, 146);
   text-decoration: none;
   border-bottom: 2px solid #A8EB12;
   transform: translateX(35deg);
@@ -1092,10 +842,8 @@ html,body
   height:100vh;
   display: grid; 
   
-  /*background: linear-gradient(90deg, #A8EB12 50%, rgb(4, 84, 95) 0%);
-  background-color: rgb(4, 84, 95); */
   grid-template-columns: .4fr 1.25fr 1fr 1fr .4fr;
-  grid-template-rows: 1fr .25fr .75fr;
+  grid-template-rows: .10fr .25fr .75fr;
   grid-template-areas : "aboutme-ltbar aboutme-title aboutme-title aboutme-title aboutme-rtbar"
                         "aboutme-ltbar  aboutme-pic     aboutme-info aboutme-info  aboutme-rtbar";
   grid-gap: 10px;
@@ -1103,8 +851,44 @@ html,body
   padding: 20px;
 }
 
+
+#circle{
+   -webkit-animation: spin 5s ease  infinite;
+      -moz-animation: spin 2s ease alternate-reverse infinite;
+        -o-animation: spin 2s ease alternate-reverse infinite;
+           animation: spin 5s ease  infinite;
+  width:85px;
+  padding-left: 10px;
+  
+}
+
+#circle2{
+   -webkit-animation: spin 10s ease-in-out alternate-reverse infinite;
+      -moz-animation: spin 2s ease alternate-reverse infinite;
+        -o-animation: spin 2s ease alternate-reverse infinite;
+           animation: spin 10s ease-in-out alternate-reverse infinite;
+  width:35px;
+}
+
+#circle3{
+   -webkit-animation: spin 10s ease-in-out alternate-reverse infinite;
+      -moz-animation: spin 2s ease alternate-reverse infinite;
+        -o-animation: spin 2s ease alternate-reverse infinite;
+           animation: spin 10s ease-in-out alternate-reverse infinite;
+padding-top: 60px;
+}
+
+#arrow{
+  width:120px;
+}
+
+
 #aboutme-title{
   grid-area: aboutme-title;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #aboutme-pic{
@@ -1112,18 +896,32 @@ html,body
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  width:300px;
+  height: 300px;
+  border-radius: 200px 250px;
+  background: linear-gradient(to bottom right,
+      #006B73, 
+      #00525B
+    ), url('');
+  
+ 
+  -webkit-box-shadow:  inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+     -moz-box-shadow:  inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+          box-shadow:  inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+          
+ 
 }
 
 #aboutme-info{
   grid-area: aboutme-info;
-  text-align: justify;
+  text-align: center;
   padding: 30px;
   font-family: special elite;
-  background-color: white;
   border-radius: 16px;
-  box-shadow:inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
-    align-items: center;
+  align-items: center;
   
+  justify-content: center;
 }
 
 #aboutme-ltbar{
@@ -1153,19 +951,7 @@ html,body
 }
 
 
-/********PORTFOLIO SECTION*********************/
-#portfolio
-{
-  margin-right: auto;
-  /*background-image: url(''),radial-gradient(#28a3dd, #0d7751);*/
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-y: scroll;
-  position: relative;
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-}
+
 
 .port-title
 {
@@ -1364,11 +1150,11 @@ html,body
   cursor: none;
 }
 
-.btnSource
+.btnProject
 {
   background-color: #A8EB12;
   border: black;
-  color:rgb(255, 255, 255);
+  color:black;
   padding: 5px 20px;
   text-align: center;
   box-shadow:inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
@@ -1382,18 +1168,14 @@ html,body
   border-radius: 15px;
   transition: all 1s;
   font-weight: 300;
- /* -moz-box-shadow: 0 0 6px #ccc;
-  -webkit-box-shadow: 0 0 6px #ccc;
-  box-shadow: 0 0 6px #ccc;*/
+ 
 }
-.btnResume
+
+.btnSource
 {
-    background: linear-gradient(to bottom right,
-      rgba(32, 178, 171, 0), 
-      rgba(46, 139, 86, 0)
-    ), url('');
+  background-color: rgb(222, 230, 205);
   border: black;
-  color:#A8EB12;
+  color:rgb(0, 0, 0);
   padding: 5px 20px;
   text-align: center;
   box-shadow:inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
@@ -1402,16 +1184,19 @@ html,body
   font-size: 16px;
   margin: 1px 1px;
   cursor: pointer;
-  
-  font-family: 'poppins';
+  text-transform: uppercase;
+  font-family: 'Special Elite';
   border-radius: 15px;
   transition: all 1s;
-    font-weight: 800;
+  font-weight: 300;
 }
-.btnResume:hover
+.btnProject:hover
 {
   text-decoration: none;
   color:white;
+  background-color: rgba(0, 255, 255, 0);
+  font-size: 14px;
+   text-transform: uppercase;
   
 }
 .btnSource:hover
@@ -1437,10 +1222,10 @@ html,body
 
 #turtle{
   width: 30%;
-  -webkit-animation: walking 25s ease-in-out infinite;
-     -moz-animation: walking 10s ease infinite;
-       -o-animation: walking 10s ease infinite;
-          animation: walking 25s ease-in-out infinite;
+  -webkit-animation: walking 20s ease-in-out infinite;
+     -moz-animation: walking 20s ease infinite;
+       -o-animation: walking 20s ease infinite;
+          animation: walking 20s ease-in-out infinite;
 bottom:40%;
 z-index: 900;
 }
@@ -1464,17 +1249,27 @@ z-index: 900;
 }
 
 .animations{
-  height:120vh;
+  height:125vh;
   display: grid;
   grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
-  grid-template-rows: .50fr .45fr;
-  grid-template-areas: "ltbar2 ani1Top ani2Top ani3Top rtbar2"
-                       "ltbar2 ani1 ani2 ani3 rtbar2"; 
+  grid-template-rows: .45fr 1.5fr .40fr;
+  grid-template-areas: "ltbar2 animation-title animation-title animation-title rtbar2"
+                       "ltbar2 animation1Top animation2Top animation3Top rtbar2"
+                       "ltbar2 animation1Bottom animation2Bottom animation3Bottom rtbar2"; 
   grid-column-gap: 10px;
+}
+
+#animation-title{
+  grid-area: animation-title;
   
 }
 
-#ani-title{
+.animation-bracket{
+  color:#006B73;
+  font-family: Special Elite;
+  
+}
+/*#animation-title{
   grid-area: ani-title;
   font-size: 70px;
   font-family: Poppins;
@@ -1483,12 +1278,17 @@ z-index: 900;
           text-shadow:  2px 4px 6px #4b585a;
   font-weight: 900;
   text-align: center;
+  
   letter-spacing: -3px; 
-}
+} */
 
 #ltbar2{
   grid-area: ltbar2;
   background-color: rgba(255, 255, 0, 0);
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  font-family: Special Elite;
+  font-size: 40px;
 }
 
 #rtbar2{
@@ -1496,9 +1296,9 @@ z-index: 900;
   background-color: rgba(255, 255, 0, 0);
 }
 
-#ani1Top{
+#animation1Top{
   
-  grid-area: ani1Top;
+  grid-area: animation1Top;
   background: linear-gradient(to bottom right,
       rgba(0, 18, 180, 0), 
       rgba(255, 255, 255, 0)
@@ -1517,8 +1317,8 @@ z-index: 900;
  
 }
 
-#ani1{
-  grid-area: ani1;
+#animation1Bottom{
+  grid-area: animation1Bottom;
   background: linear-gradient(to bottom right,
       rgb(255, 255, 255), 
       rgb(255, 255, 255)
@@ -1532,8 +1332,8 @@ z-index: 900;
   position: relative;
 }
 
-#ani2Top{
-  grid-area: ani2Top;
+#animation2Top{
+  grid-area: animation2Top;
   background: linear-gradient(to bottom right,
       rgba(0, 18, 180, 0), 
       rgba(255, 255, 255, 0)
@@ -1550,8 +1350,8 @@ z-index: 900;
   overflow: hidden;  
 }
 
-#ani2{
-  grid-area: ani2;
+#animation2Bottom{
+  grid-area: animation2Bottom;
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1566,8 +1366,8 @@ z-index: 900;
   font-size: 20px;
 }
 
-#ani3Top{
-  grid-area: ani3Top;
+#animation3Top{
+  grid-area: animation3Top;
   background: linear-gradient(to bottom right,
       rgba(0, 18, 180, 0), 
       rgba(255, 255, 255, 0)
@@ -1584,8 +1384,8 @@ z-index: 900;
   overflow: hidden;
  
 }
-#ani3{
-  grid-area: ani3;
+#animation3Bottom{
+  grid-area: animation3Bottom;
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1599,10 +1399,10 @@ z-index: 900;
 
 
 
-.cluster{
+/*#portfolio{
   height: auto;
   display: grid;
-  grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+  grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
   grid-template-rows: .10fr 1fr 1fr 1fr .10fr;
   grid-template-areas: "ltbar projects-title projects-title projects-title rtbar"
                        "ltbar content1 content2 content2 rtbar"
@@ -1611,19 +1411,18 @@ z-index: 900;
                        "ltbar ani-title ani-title ani-title rtbar"
                        ;
   padding: 10px;
-  grid-row-gap: 50px;
-}
+  grid-row-gap: 5px;
+}*/
 
 #projects-title{
   grid-area: projects-title;
- font-size: 62px;
+  font-size: 62px;
   font-family: Poppins;
   color: #95B0B4;
   text-shadow: 3px 4px 5px #4b585a;
   text-align: center;
   font-weight: 800;
-  padding-top: 100px;
-  
+  padding-top: 100px; 
 }
 
 
@@ -1634,17 +1433,16 @@ z-index: 900;
   background: linear-gradient(to bottom right,
       rgba(59, 61, 61, 0), 
       rgba(22, 22, 22, 0)
-    ), url('office_images/comicbook.png');
+    ), url('');
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   display: flex;
-  background-attachment: fixed;
-  -webkit-box-shadow:  inset 0 3px 16px #4b585a;
+  padding-top: 300px;
+  /*-webkit-box-shadow:  inset 0 3px 16px #4b585a;
      -moz-box-shadow:  inset 0 3px 16px #4b585a;
-          box-shadow:  inset 0 3px 16px #4b585a;
+          box-shadow:  inset 0 3px 16px #4b585a; */
 }
 
 #content2{
@@ -1653,44 +1451,42 @@ z-index: 900;
   padding-top:30px;
   padding-left: 80px;
   padding-right: 80px;
-  background-color: white;
+  
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+  /*-webkit-box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
      -moz-box-shadow: 0 3px 16px #4b585a;
-          box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+          box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17); */
   font-family: poppins;
 }
 
 #content3{
   grid-area: content3;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.021), 
-      rgba(95, 0, 219, 0)
-    ), url(/office_images/fetch.png);
+ 
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-box-shadow: inset 0 3px 16px #4b585a;
+  padding-top: 50px;
+  padding-right: 50px;
+  /*-webkit-box-shadow: inset 0 3px 16px #4b585a;
      -moz-box-shadow: inset 0 3px 16px #4b585a;
-          box-shadow: inset 0 3px 16px #4b585a;
-  justify-content: center;
-  align-items: center;
-  display: flex; 
-  background-size: cover;
-  background-attachment: fixed;
+          box-shadow: inset 0 3px 16px #4b585a;*/
+  /*justify-content: center;*/
+  /*align-items: center
+  display: flex; */
+ 
 }
 
 #content4{ 
   grid-area: content4;
-  background-color: white;
+ 
   padding-top:30px;
   padding-left: 80px;
   padding-right: 80px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  -webkit-box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+ /* -webkit-box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
      -moz-box-shadow: 0 3px 16px #4b585a;
-          box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17); 
+          box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17); */
   font-family: poppins;
   color:rgba(0, 0, 0, 0.74);
 }
@@ -1700,18 +1496,13 @@ z-index: 900;
   background: linear-gradient(to bottom right,
       rgba(111, 226, 218, 0), 
       rgba(217, 217, 217, 0)
-    ), url('office_images/jobapp.png');
+    ), url('');
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  -webkit-box-shadow: inset 0 3px 16px #4b585a;
-     -moz-box-shadow: inset 0 3px 16px #4b585a;
-          box-shadow: inset 0 3px 16px #4b585a;
-  justify-content: center;
-  align-items: center;
   display: flex;
-  background-attachment: fixed;
-  background-size: contain;
-
+  align-items: center;
+  justify-content: center;
+  padding-top: 500px;
 }
 
 #content6{
@@ -1720,12 +1511,8 @@ z-index: 900;
   padding-top:30px;
   padding-left: 80px;
   padding-right: 80px;
-  background-color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
-     -moz-box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
-          box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
   font-family: poppins;
 }
 
@@ -1814,11 +1601,13 @@ p{
 }
 
 #contact-ltbar{
-  grid-area: contact-ltbar;
+  grid-area: contact-ltbar; 
+  
 }
 
 #contact-rtbar{ 
   grid-area: contact-rtbar;
+  
 }
 
 #github{
@@ -1872,7 +1661,15 @@ p{
 }
 
 @media only screen and (max-width: 700px) {
-    .cluster{
+    
+
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  #portfolio{
       grid-template-columns: 1fr;
       grid-template-rows: .25fr 0fr 1fr .0fr 1fr .0fr 1fr 0fr 0fr .25fr;
       grid-template-areas: "projects-title"
@@ -1907,34 +1704,22 @@ p{
 
    #content5{
      border-radius: 16px;
+     
    }
 
    #content6{
      border-radius: 0px;
    }
 
-   #ltbar{
-     
-   }
+   
 
-   #rtbar{
-     
-   }
-
-
-
-
-
-}
-
-@media only screen and (max-width: 700px) {
   ::-webkit-scrollbar{
   width:0px;
 }
 
   #aboutme{
   height: 10%;
-  background: rgba(0, 0, 255, 0);
+  
   grid-template-columns: 1fr;
   grid-template-rows: .01fr .25fr .75fr 1fr .01fr;
   grid-template-areas : "aboutme-ltbar"
@@ -1952,35 +1737,35 @@ p{
     grid-template-columns: 1fr;
     grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
     grid-template-areas: "ltbar2"
-                         "ani1Top"
-                         "ani1" 
-                         "ani2Top" 
-                         "ani2"
-                         "ani3Top" 
-                         "ani3" 
+                         "animation1Top"
+                         "animation1Bottom" 
+                         "animation2Top" 
+                         "animation2Bottom"
+                         "animation3Top" 
+                         "animation3Bottom" 
                          "rtbar2"; 
     overflow: hidden;
 
     
 }
 
-  #ani1Top{
+  #animation1Top{
     border-radius: 0px;
   }
-  #ani2Top{
+  #animation2Top{
     border-radius: 0px;
   }
-  #ani3Top{
+  #animation3Top{
     border-radius: 0px;
   }
 
-  #ani1{
+  #animation1Bottom{
     border-radius: 0px;
   }
-  #ani2{
+  #animation2Bottom{
     border-radius: 0px;
   }
-  #ani3Top{
+  #animation3Top{
     border-radius: 0px;
   }
                         
@@ -1999,4 +1784,43 @@ p{
 
     
   }
+
+}
+#portfolio{
+  
+  height: auto;
+  display: grid;
+  grid-template-columns: .20fr .5fr .5fr .20fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "left_sidebar top_left top_right  right_sidebar"
+                       "left_sidebar bottom_left bottom_right right_sidebar";
+}
+
+#left_sidebar{
+  grid-area: left_sidebar;
+ 
+}
+
+#right_sidebar{
+  grid-area: right_sidebar;
+ 
+}
+
+#top_left{
+  grid-area: top_left;
+  
+}
+
+#top_right{
+  grid-area: top_right;
+  
+}
+
+#bottom_left{
+  grid-area: bottom_left;
+ 
+}
+            
+#bottom_right{
+  grid-area: bottom_right;
 }
