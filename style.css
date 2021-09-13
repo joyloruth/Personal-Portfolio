@@ -1824,3 +1824,7 @@ p{
 #bottom_right{
   grid-area: bottom_right;
 }
+
+#picturescreen{
+  width:400px;
+}
