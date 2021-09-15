@@ -873,8 +873,8 @@ width:180px;
 
 #circle3{
    -webkit-animation: spin 10s ease-in-out alternate-reverse infinite;
-      -moz-animation: spin 2s ease alternate-reverse infinite;
-        -o-animation: spin 2s ease alternate-reverse infinite;
+      -moz-animation: spin 10s ease-in-out alternate-reverse infinite;
+        -o-animation: spin 10s ease-in-out alternate-reverse infinite;
            animation: spin 10s ease-in-out alternate-reverse infinite;
 padding-top: 60px;
 }
