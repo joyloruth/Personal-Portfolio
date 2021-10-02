@@ -107,7 +107,7 @@
   flex-direction: column;
   background-attachment: fixed;
   overflow: hidden;
-  background-image: radial-gradient(ellipse at top, #202130, #14151bef, #14161df1), url(images/job-app-images/office-space.jpg);
+  background-image: radial-gradient(ellipse at top, #202130, #14151bef, #14161d), url(images/job-app-images/office-space.jpg);
   background-size: cover;
 }
 

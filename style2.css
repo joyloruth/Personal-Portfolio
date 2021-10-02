@@ -1,0 +1,267 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rajdhani:wght@300;700&display=swap');
+
+/*SCROLLBAR*/
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background-color: rgb(255, 255, 255);}
+::-webkit-scrollbar-thumb{background-color: black;}
+::-webkit-scrollbar-thumb:hover{background-color: rgb(195, 240, 98);}
+::-webkit-scrollbar{scroll-behavior: smooth;}
+
+/*PRELOADER*/
+#preloader{
+  background-color: #222430;
+  position: fixed;
+  background-color: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 200;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveWindowDown 1s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+.ball:first-child{
+  width:50px;
+  height: 50px;
+  border-radius: 100%;
+  animation: fadeInBalls 4s ease, grow .5s ease-in-out, oscillate 1s alternate-reverse infinite;
+  box-shadow:inset 3px -3px 3px #b7cf91 ;
+  margin: 5px;
+}
+.ball:nth-child(2){
+  width:50px;
+  
+  height: 50px;
+  border-radius: 100%;
+  box-shadow:inset 3px 3px 3px #76b60e ;
+  animation: fadeInBalls 4s ease, grow .5s ease-out, oscillate .75s alternate infinite;
+}
+
+/*preloader animation keyframes*/
+@keyframes fadeInBalls{
+    0% { opacity:   0%;}   
+  100% { opacity: 100%;}
+  }
+
+@keyframes oscillate{
+    0% { transform: translateY(0px);}   
+  100% { transform: translateY(-20px);}
+  }
+
+@keyframes moveWindowDown{
+    0% { transform: translateY(0px);}   
+  100% { transform: translateY(100vh);}
+  }
+
+@keyframes grow{
+  from { height: 0px;
+          width: 0px;
+       }   
+    to { height: 50px;
+          width: 50px;
+       }
+  }
+
+@keyframes shrink{
+  from { height: 100%;
+          width: 100%;
+       }   
+    to { height:   0%;
+          width:   0%;
+       }
+  }
+
+.navbar{
+  background-color: #222430;
+  font-family: 'Times New Roman', Times, serif;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 7vh;
+}
+.navbar a{
+  color:white;
+  padding: 10px;
+  padding-left: 30px;
+  font-family: Rajdhani;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+  color:rgba(237, 240, 231, 0.89);
+  font-size: 20px;
+  transition: all 1s;
+}
+
+/* PORTFOLIO CUBE*/
+#cube-section{
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "slider cube-info-1 cube-img-1 cube-info-3"
+                       "slider cube-img-2 cube-info-2  cube-img-3";
+  height: 93vh;
+  width: 100%;
+}
+#cube-section h2{
+  font-size: 25px;
+  font-family: Rajdhani;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+#cube-section h3{
+  color: #76b60e;
+  font-size: 15px;
+  font-family: Rajdhani;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#cube-section p{
+  font-family: Rajdhani;
+  color: black;
+  font-weight: 500;
+}
+.slider{
+  background-color: #76b60e;
+  grid-area: slider;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cube-info-1{
+  background-color: white;
+  grid-area: cube-info-1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.cube-info-2{
+  background-color: white;
+  grid-area: cube-info-2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.cube-info-3{
+  background-color: white;
+  grid-area: cube-info-3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.cube-img-1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.795)),url(/images/job-app-images/office-space.jpg);
+  grid-area: cube-img-1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.cube-img-1:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.925)),url(/images/job-app-images/office-space.jpg);
+  transition: all 2s ease-in-out;
+}
+.cube-img-2{
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.678)),url(/images/burger-app-images/burgerBg.jpg);
+  grid-area: cube-img-2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.cube-img-2:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url(/images/burger-app-images/burgerBg.jpg);
+  transition: all 2s ease-in-out;
+}
+.cube-img-3{
+  background-image: linear-gradient(rgb(72, 73, 69), rgb(14, 14, 12)),url();
+  grid-area: cube-img-3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PROJECT AND SOURCE CODE BUTTONS*/
+.sourceCodeButton{
+  background-color: #0ea2b6;
+  padding: 5px 10px;
+  color: white;
+  font-family: Rajdhani;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 2.5px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 4px black;
+  -webkit-animation: oscillate 2s alternate-reverse infinite;
+     -moz-animation: oscillate 2s alternate infinite;
+          animation: oscillate 2s alternate-reverse infinite;
+}
+.sourceCodeButton:hover{
+  background-color: #7edde975;
+  color: white;
+  font-family: Rajdhani;
+  text-decoration: none;
+  -webkit-animation: normal;
+     -moz-animation: normal;
+          animation: normal;
+}
+
+.projectButton{
+  background-color: #76b60e;
+  padding: 5px 10px;
+  color: white;
+  font-family: Rajdhani;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 2.5px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 4px black;
+  -webkit-animation: oscillate 2s alternate infinite;
+     -moz-animation: oscillate 2s alternate infinite;
+          animation: oscillate 2s alternate infinite;
+}
+.projectButton:hover{
+  background-color: #91ca3573;
+  color: white;
+  font-family: Rajdhani;
+  text-decoration: none;
+  -webkit-animation: normal;
+     -moz-animation: normal;
+          animation: normal;
+}
+
+
+/* KEYFRAMES */
+@keyframes fadeIn{
+  0% { opacity:   0%;}   
+100% { opacity: 100%;}
+}
+
+@keyframes oscillate{
+  0% { transform: translateY(0px);}   
+100% { transform: translateY(-20px);}
+}
