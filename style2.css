@@ -27,24 +27,41 @@
   align-items: center;
   animation: moveWindowDown 1s ease-out;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 2s;
 }
 
 .ball:first-child{
+  background-color: #dfe6d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:50px;
+  height: 50px;
+  font-size: 40px;
+  color: #222430;
+  text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.651);
+  font-family: permanent marker;
   width:50px;
   height: 50px;
   border-radius: 100%;
-  animation: fadeInBalls 4s ease, grow .5s ease-in-out, oscillate 1s alternate-reverse infinite;
-  box-shadow:inset 3px -3px 3px #b7cf91 ;
+  animation: fadeInBalls 1s ease, grow .5s ease-in-out, oscillate .5s alternate-reverse infinite;
+  box-shadow:inset 3px -3px 3px #8e918a ;
   margin: 5px;
 }
 .ball:nth-child(2){
+  background-color: #76b60e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width:50px;
-  
   height: 50px;
+  font-size: 40px;
+  color:white;
+  text-shadow: 3px 3px 3px#283b09;
+  font-family: permanent marker;
   border-radius: 100%;
-  box-shadow:inset 3px 3px 3px #76b60e ;
-  animation: fadeInBalls 4s ease, grow .5s ease-out, oscillate .75s alternate infinite;
+  box-shadow:inset 3px -3px 3px #355208 ;
+  animation: fadeInBalls 1s ease, grow .5s ease-out, oscillate .5s alternate infinite;
 }
 
 /*preloader animation keyframes*/
@@ -143,6 +160,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 .cube-info-1{
   background-color: white;
@@ -185,7 +203,7 @@
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.678)),url(/images/burger-app-images/burgerBg.jpg);
   grid-area: cube-img-2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   background-size: cover;
@@ -217,7 +235,7 @@
   text-transform: uppercase;
   box-shadow: 0px 3px 4px black;
   -webkit-animation: oscillate 2s alternate-reverse infinite;
-     -moz-animation: oscillate 2s alternate infinite;
+     -moz-animation: oscillate 2s alternate-reverse infinite;
           animation: oscillate 2s alternate-reverse infinite;
 }
 .sourceCodeButton:hover{
@@ -254,6 +272,10 @@
           animation: normal;
 }
 
+#arrow{
+  height: 100px;
+  animation: fadeIn 2s ease, oscillateVertical 1s alternate-reverse infinite;
+}
 
 /* KEYFRAMES */
 @keyframes fadeIn{
@@ -264,4 +286,9 @@
 @keyframes oscillate{
   0% { transform: translateY(0px);}   
 100% { transform: translateY(-20px);}
+}
+
+@keyframes oscillateVertical{
+  0% { transform: translateX(0px);}   
+100% { transform: translateX(-20px);}
 }
