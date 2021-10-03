@@ -146,8 +146,8 @@
 }
 #cube-section h3{
   color: #76b60e;
-  font-size: 15px;
-  font-family: Rajdhani;
+  font-size: 20px;
+  font-family: Amatic SC;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -191,7 +191,7 @@
   justify-content: center;
 }
 .cube-img-1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.349)),url();
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url();
   grid-area: cube-img-1;
   display: flex;
   flex-direction: row;
@@ -216,7 +216,7 @@
  }
 
 .cube-img-2{
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.678)),url(/images/office-animation-images/office-desk.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144)),url();
   grid-area: cube-img-2;
   display: flex;
   flex-direction: column-reverse;
@@ -226,20 +226,21 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: hidden;
 }
 .cube-img-2:hover{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url(/images/office-animation-images/office-desk.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url();
   transition: all 2s ease-in-out;
 }
 
 .cube-img-3{
-  background-image: linear-gradient(rgb(72, 73, 69), rgb(14, 14, 12)),url();
+  background-image: linear-gradient(rgb(72, 73, 69), rgba(14, 14, 12, 0.425)),url(/images/turtle-animation-images/turtlebg.jpg);
   grid-area: cube-img-3;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  background-size: cover;
 }
 
 /*PROJECT AND SOURCE CODE BUTTONS*/

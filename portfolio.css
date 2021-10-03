@@ -125,7 +125,9 @@
   color:rgba(237, 240, 231, 0.89);
   font-size: 20px;
   transition: all 1s;
-}
+} 
+
+
 
 /* PORTFOLIO CUBE*/
 #cube-section{
@@ -146,8 +148,8 @@
 }
 #cube-section h3{
   color: #76b60e;
-  font-size: 15px;
-  font-family: Rajdhani;
+  font-size: 20px;
+  font-family: amatic sc;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -163,7 +165,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 .cube-info-1{
   background-color: white;
@@ -190,7 +191,7 @@
   justify-content: center;
 }
 .cube-img-1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.795)),url(/images/job-app-images/office-space.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.795)),url(/images/job-app-images/office-space.jpg);
   grid-area: cube-img-1;
   display: flex;
   flex-direction: row;
@@ -199,11 +200,11 @@
   background-attachment: fixed;
 }
 .cube-img-1:hover{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.925)),url(/images/job-app-images/office-space.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.829)),url(/images/job-app-images/office-space.jpg);
   transition: all 2s ease-in-out;
 }
 .cube-img-2{
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.678)),url(/images/burger-app-images/burgerBg.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.418)),url(/images/burger-app-images/burgerBg.jpg);
   grid-area: cube-img-2;
   display: flex;
   flex-direction: column-reverse;
@@ -218,12 +219,13 @@
   transition: all 2s ease-in-out;
 }
 .cube-img-3{
-  background-image: linear-gradient(rgb(72, 73, 69), rgb(14, 14, 12)),url();
+  background-image: linear-gradient(rgba(72, 73, 69, 0.267), rgba(14, 14, 12, 0.226)),url(images/job-app-images/computerbg.jpg);
   grid-area: cube-img-3;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 
 /*PROJECT AND SOURCE CODE BUTTONS*/
@@ -237,6 +239,7 @@
   margin: 2.5px;
   text-transform: uppercase;
   box-shadow: 0px 3px 4px black;
+  box-shadow:inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
   -webkit-animation: oscillate 2s alternate-reverse infinite;
      -moz-animation: oscillate 2s alternate-reverse infinite;
           animation: oscillate 2s alternate-reverse infinite;
@@ -249,6 +252,7 @@
   -webkit-animation: normal;
      -moz-animation: normal;
           animation: normal;
+          -shadow: 0px 3px 4px black;
 }
 
 .projectButton{
@@ -264,6 +268,7 @@
   -webkit-animation: oscillate 2s alternate infinite;
      -moz-animation: oscillate 2s alternate infinite;
           animation: oscillate 2s alternate infinite;
+          box-shadow:inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
 }
 .projectButton:hover{
   background-color: #91ca3573;
@@ -278,6 +283,10 @@
 #arrow{
   height: 100px;
   animation: fadeIn 2s ease, oscillateVertical 1s alternate-reverse infinite;
+}
+
+#arrow:hover{
+  opacity: 60%;
 }
 
 /* KEYFRAMES */
