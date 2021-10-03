@@ -8,15 +8,19 @@
 	<!-- Bootstrap CSS ---------------------------------------->
 	<link rel="stylesheet"   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="icon"   type="image/png"   href="misc-images/favicon.png" />
-	<link rel="stylesheet" href="portfolio.css">
+	<link rel="stylesheet" href="animations.css">
   <link rel="icon"   type="image/png"   href="images/misc-images/favicon.png" />
   <title>Joy LoRuth | Web Developer</title>
+
+  <!-- The script tag should live in the head of your page if at all possible -->
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 </head>
 <body>
-  <div id="preloader">
+  <!--
+ <div id="preloader">
     <div class="ball">J</div>
     <div class="ball">L</div>
-  </div> 
+  </div> -->
 
   <!-- NAVIGATION MENU-->
   <nav class="navbar navbar-expand-lg navbar-dark navbar">
@@ -27,50 +31,52 @@
       <div class="collapse navbar-collapse nav" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <a class = "menu" href="index.html">  <span style="color: #a3ff12;">01. </span> home </a>
-          <a class = "menu" href="#"> <span style="color: #a3ff12;"> .02 </span>portfolio </a>
-          <a class = "menu" href="animations.html"> <span style="color: #a3ff12;"> .02 </span>animations </a>
+          <a class = "menu" href="portfolio.html"> <span style="color: #a3ff12;"> .02 </span>portfolio </a>
+          <a class = "menu" href="#"> <span style="color: #a3ff12;"> .02 </span>animations </a>
           <a class = "menu" href="contact.html"> <span style="color: #a3ff12;">.03</span> contact </a>
         </ul>
       </div>
   </nav> 
 
   <section id="cube-section">
-    <div class ="slider">
+    <div class ="slider"> 
       <h3>animations</h3>
       <h2>I love making a website come to life</h2>
     </div>
     <!--block info-->
     <div class="cube-info-1">
-      <h3>JAVA SPRING MYSQL HTML CSS</h3>
-      <h2>Job Application Manager</h2>
-      <p>This responsive Spring MVC project assists job seekers in keeping the job application process organized. Implemented CRUD methods which allows end-users to <b>create, retrieve, update</b> and
-        <b>delete</b> entries to and from MySQL database.
-      </p>
+      <h3>HTML CSS</h3>
+      <h2>Rocket Launch Animation</h2>
+      <p> An short animation created with only HTML/CSS.</p>
+      <a class="projectButton"    href="https://joyloruth.com/rocketpreloader/rocket.html" target="_blank"> view animation</a>
+      <a class="sourceCodeButton" href="https://github.com/joyloruth/RocketAnimation"      target="_blank">source code</a>
     </div>
     <!--block img-->
     <div class="cube-img-1">
-      <a class="projectButton"     href="https://joyloruth-jobtracker.herokuapp.com/" target="_blank"> view project</a>
-      <a class="sourceCodeButton"  href="https://github.com/joyloruth/Job-Application-Manager" target="_blank">source code</a>
+      <video src="/images/rocket-animation-images/rocketclip.mp4" autoplay loop playsinline muted></video>
+      
     </div>
     <div class="cube-info-2">
       <h3>HTML CSS JAVASCRIPT</h3>
-      <h2>Burger Bistro</h2>
-      <p>Responsive front-end website for the Vegan Burger Bistro that uses Google Maps API to shows store location.
+      <h2>Office Space</h2>
+      <p>This office space animation allows the user to interact with the space. Flip the light switch that effects the lights and weather outside the window. Users can hover over certain items to animate them.
       </p>
+      <a class="projectButton" href="https://joyloruth.github.io/OfficeSpace/" target="_blank"> view animation</a>
+      <a class="sourceCodeButton" href="https://github.com/joyloruth/OfficeSpace" target="_blank">source code</a>
     </div>
     <!--block img-->
     <div class="cube-img-2">
-      <a class="sourceCodeButton" href="https://github.com/joyloruth/FETCHBurgerBistro"target="_blank">source code</a>
-      <a class="projectButton" href="https://joyloruth.github.io/FETCHBurgerBistro/" target="_blank"> view project</a>
-      
     </div>
     <div class="cube-info-3">
-      <h3>next: animations</h3>
-      <h2>I love making a website come to life</h2>
+      <h3>python</h3>
+      <h2>Turtle Race</h2>
+      <p>An auto play turtle race animation that has a different winner each time the race ends.</p>
+      <a class="projectButton"    href="https://replit.com/@joyloruth/Turtles-Speed-Races#main.py" target="_blank"> view animation</a>
+      <a class="sourceCodeButton" href="https://github.com/joyloruth/Turtle-Speed-Race" target="_blank">source code</a>
     </div>
+    
     <!--block img-->
     <div class="cube-img-3">
-      <img src = "images/misc-images/aniarrow.png" id = "arrow">
     </div>
   </section>
   

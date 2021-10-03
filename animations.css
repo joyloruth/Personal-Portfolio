@@ -5,7 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rajdhani:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
+*{
+  margin: 0px;
+}
 /*SCROLLBAR*/
 ::-webkit-scrollbar{width:10px;}
 ::-webkit-scrollbar-track{background-color: rgb(255, 255, 255);}
@@ -125,12 +129,11 @@
 
 /* PORTFOLIO CUBE*/
 #cube-section{
-  background-color: blue;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "slider cube-info-1 cube-img-1 cube-info-3"
-                       "slider cube-img-2 cube-info-2  cube-img-3";
+  grid-template-areas: " cube-info-1 cube-img-1 cube-info-3 slider"
+                       " cube-img-2 cube-info-2  cube-img-3 slider";
   height: 93vh;
   width: 100%;
 }
@@ -151,7 +154,7 @@
 #cube-section p{
   font-family: Rajdhani;
   color: black;
-  font-weight: 500;
+  font-weight: regular 400;
 }
 .slider{
   background-color: #76b60e;
@@ -160,8 +163,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
+
+
 .cube-info-1{
   background-color: white;
   grid-area: cube-info-1;
@@ -187,20 +191,32 @@
   justify-content: center;
 }
 .cube-img-1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.795)),url(/images/job-app-images/office-space.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.349)),url();
   grid-area: cube-img-1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
+  overflow: hidden;
+  
 }
 .cube-img-1:hover{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.925)),url(/images/job-app-images/office-space.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.603)),url();
   transition: all 2s ease-in-out;
 }
+
+ video {
+  object-fit: cover;
+  top: 0px;
+  object-position: center;
+  z-index: -60;
+  width: 500px;
+  height: 500px;
+ }
+
 .cube-img-2{
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.678)),url(/images/burger-app-images/burgerBg.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.678)),url(/images/office-animation-images/office-desk.jpg);
   grid-area: cube-img-2;
   display: flex;
   flex-direction: column-reverse;
@@ -209,11 +225,13 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .cube-img-2:hover{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url(/images/burger-app-images/burgerBg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url(/images/office-animation-images/office-desk.jpg);
   transition: all 2s ease-in-out;
 }
+
 .cube-img-3{
   background-image: linear-gradient(rgb(72, 73, 69), rgb(14, 14, 12)),url();
   grid-area: cube-img-3;
@@ -221,22 +239,25 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 /*PROJECT AND SOURCE CODE BUTTONS*/
 .sourceCodeButton{
-  background-color: #0ea2b6;
+  background-color: #650eb6;
   padding: 5px 10px;
   color: white;
   font-family: Rajdhani;
   border-radius: 5px;
-  font-weight: 600;
-  margin: 2.5px;
+  font-weight: 500;
+  margin: 3.5px;
   text-transform: uppercase;
   box-shadow: 0px 3px 4px black;
-  -webkit-animation: oscillate 2s alternate-reverse infinite;
+  -webkit-animation: oscillate 2s alternate-reverse step-end infinite;
      -moz-animation: oscillate 2s alternate-reverse infinite;
-          animation: oscillate 2s alternate-reverse infinite;
+          animation: oscillate 1.5s alternate-reverse ease-in-out infinite;
+width: 45%;
+
 }
 .sourceCodeButton:hover{
   background-color: #7edde975;
@@ -254,13 +275,15 @@
   color: white;
   font-family: Rajdhani;
   border-radius: 5px;
-  font-weight: 600;
-  margin: 2.5px;
+  font-weight: 500;
+  margin: 3.5px;
   text-transform: uppercase;
   box-shadow: 0px 3px 4px black;
   -webkit-animation: oscillate 2s alternate infinite;
      -moz-animation: oscillate 2s alternate infinite;
           animation: oscillate 2s alternate infinite;
+  width: 45%;
+  font-size: 14px;
 }
 .projectButton:hover{
   background-color: #91ca3573;
@@ -285,7 +308,7 @@
 
 @keyframes oscillate{
   0% { transform: translateY(0px);}   
-100% { transform: translateY(-20px);}
+100% { transform: translateY(-5px);}
 }
 
 @keyframes oscillateVertical{
