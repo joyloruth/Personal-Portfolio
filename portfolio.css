@@ -36,6 +36,7 @@
 
 .ball:first-child{
   background-color: #dfe6d4;
+  border: #ffffff 3px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +62,7 @@
   height: 50px;
   font-size: 40px;
   color:white;
+  border: #ffffff 3px solid;
   text-shadow: 3px 3px 3px#283b09;
   font-family: permanent marker;
   border-radius: 100%;
