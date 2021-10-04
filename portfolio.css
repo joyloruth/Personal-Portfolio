@@ -182,7 +182,73 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: bounce 5s alternate-reverse ease-in-out infinite;
+  overflow: hidden;
 }
+
+.slider h1{
+  font-family: permanent marker;
+  font-size: 50px;
+  justify-content: right;
+  animation: test 2s alternate-reverse infinite,hang 5s ease-in-out alternate-reverse infinite;
+  
+
+}
+
+
+@keyframes test{
+  0% { opacity:   0%;
+        
+        transform: rotateX(95deg);
+        
+        
+
+                      }   
+100% { opacity: 100%;
+        color:#222430;
+        transform: rotateY(45deg);}
+}
+
+@keyframes hang{
+  100%{transform: rotate(90deg);}
+}
+
+
+@keyframes bounce{
+  0%{
+    display:none;
+    justify-content: justify;
+    align-items: center;
+    flex-direction: column;
+     color:rgb(92, 25, 199);
+    font-family: amatic sc;
+  }
+  
+  25%{
+    display:none;
+    justify-content:left;
+    align-items:flex-end;
+    flex-direction: column;
+    color: #222430;
+  }
+
+  50%{
+    display:flex;
+    justify-content: right;
+    align-items:stretch;
+    flex-direction: column-reverse;
+    font-family: amatic sc;
+  }
+
+  100%{
+    display:none;
+    justify-content:center;
+    align-items:flex-end;
+    flex-direction: column;
+    color: #222430;
+  }
+}
+
 .cube-info-1{
   background-color: white;
   grid-area: cube-info-1;
@@ -190,6 +256,7 @@
   flex-direction: column;
   padding: 10px;
   justify-content: center;
+  
 }
 .cube-info-2{
   background-color: white;
@@ -198,6 +265,7 @@
   flex-direction: column;
   padding: 10px;
   justify-content: center;
+  
 }
 .cube-info-3{
   background-color: white;
@@ -206,6 +274,7 @@
   flex-direction: column;
   padding: 10px;
   justify-content: center;
+  
 }
 .cube-img-1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.795)),url(/images/job-app-images/office-space.jpg);
@@ -215,6 +284,7 @@
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
+  box-shadow: inset 3px 3px 3px black;
 }
 .cube-img-1:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.829)),url(/images/job-app-images/office-space.jpg);
@@ -230,6 +300,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  box-shadow: inset 3px 3px 3px black;
 }
 .cube-img-2:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url(/images/burger-app-images/burgerBg.jpg);
@@ -243,6 +314,7 @@
   justify-content: center;
   align-items: center;
   background-size: cover;
+  box-shadow: inset 3px 3px 3px black;
 }
 
 /*PROJECT AND SOURCE CODE BUTTONS*/
