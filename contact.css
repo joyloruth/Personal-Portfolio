@@ -1,0 +1,190 @@
+
+/* PORTFOLIO CUBE*/
+#cube-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: " cube-info-1 cube-img-1 cube-info-3 slider"
+                       " cube-img-2 cube-info-2  cube-img-3 slider";
+  height: 93vh;
+  width: 100%;
+}
+#cube-section h2{
+  font-size: 25px;
+  font-family: Rajdhani;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+#cube-section h3{
+  color: #76b60e;
+  font-size: 20px;
+  font-family: Amatic SC;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#cube-section p{
+  font-family: Rajdhani;
+  color: black;
+  font-weight: regular 400;
+}
+.slider{
+  background-color: #76b60e;
+  grid-area: slider;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.cube-info-1{
+  background-color: white;
+  grid-area: cube-info-1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.cube-info-2{
+  background-color: white;
+  grid-area: cube-info-2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.cube-info-3{
+  background-color: white;
+  grid-area: cube-info-3;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+.cube-img-1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url();
+  grid-area: cube-img-1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  
+}
+.cube-img-1:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.603)),url();
+  transition: all 2s ease-in-out;
+}
+
+ video {
+  object-fit: cover;
+  top: 0px;
+  object-position: center;
+  z-index: -60;
+  width: 500px;
+  height: 500px;
+ }
+
+.cube-img-2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144)),url();
+  grid-area: cube-img-2;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.cube-img-2:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.925)),url();
+  transition: all 2s ease-in-out;
+}
+
+.cube-img-3{
+  background-image: linear-gradient(rgb(72, 73, 69), rgba(14, 14, 12, 0.425)),url(/images/turtle-animation-images/turtlebg.jpg);
+  grid-area: cube-img-3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+/*PROJECT AND SOURCE CODE BUTTONS*/
+.sourceCodeButton{
+  background-color: #650eb6;
+  padding: 5px 10px;
+  color: white;
+  font-family: Rajdhani;
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 3.5px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 4px black;
+  -webkit-animation: oscillate 2s alternate-reverse step-end infinite;
+     -moz-animation: oscillate 2s alternate-reverse infinite;
+          animation: oscillate 1.5s alternate-reverse ease-in-out infinite;
+width: 45%;
+
+}
+.sourceCodeButton:hover{
+  background-color: #7edde975;
+  color: white;
+  font-family: Rajdhani;
+  text-decoration: none;
+  -webkit-animation: normal;
+     -moz-animation: normal;
+          animation: normal;
+}
+
+.projectButton{
+  background-color: #76b60e;
+  padding: 5px 10px;
+  color: white;
+  font-family: Rajdhani;
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 3.5px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 4px black;
+  -webkit-animation: oscillate 2s alternate infinite;
+     -moz-animation: oscillate 2s alternate infinite;
+          animation: oscillate 2s alternate infinite;
+  width: 45%;
+  font-size: 14px;
+}
+.projectButton:hover{
+  background-color: #91ca3573;
+  color: white;
+  font-family: Rajdhani;
+  text-decoration: none;
+  -webkit-animation: normal;
+     -moz-animation: normal;
+          animation: normal;
+}
+
+#arrow{
+  height: 100px;
+  animation: fadeIn 2s ease, oscillateVertical 1s alternate-reverse infinite;
+}
+
+/* KEYFRAMES */
+@keyframes fadeIn{
+  0% { opacity:   0%;}   
+100% { opacity: 100%;}
+}
+
+@keyframes oscillate{
+  0% { transform: translateY(0px);}   
+100% { transform: translateY(-5px);}
+}
+
+@keyframes oscillateVertical{
+  0% { transform: translateX(0px);}   
+100% { transform: translateX(-20px);}
+}
