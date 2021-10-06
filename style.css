@@ -752,7 +752,7 @@
 @media only screen and (max-width: 375px ) {
 
   #top-banner{
-    height:120vh;
+    height:130vh;
     width:100%;
     /*background-image: radial-gradient(#c6cbea,#222430 ), url("office_images/circle.png");*/
     background-repeat: no-repeat;
