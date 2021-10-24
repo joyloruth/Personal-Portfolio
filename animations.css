@@ -138,12 +138,14 @@ nav .navbar-nav li a{
 /* PORTFOLIO CUBE*/
 #cube-section{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: " cube-info-1 cube-img-1 cube-info-3 slider"
                        " cube-img-2 cube-info-2  cube-img-3 slider";
   height: 92vh;
   width: 100%;
+  grid-gap: 5px;
+  background-color: #222430;
 }
 #cube-section h2{
   font-size: 25px;
