@@ -94,3 +94,8 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+#project-details{
+  background-color: blue;
+  font-size: 14px;
+}

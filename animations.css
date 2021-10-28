@@ -466,41 +466,7 @@ text-decoration: none;
             width:   0%;
          }
     }
-  /*
- .navbar{
-    background-color: #222430;
-    font-family: 'Times New Roman', Times, serif;
-    
-    width: 100%;
-    top: 0px;
-    height: 10vh;
- }  
 
- nav .nav-link active{
-  background-color: #dfe6d4;
- }
-  
-  #navbarNav ul li a{
-    color:white;
-    padding: 10px;
-    padding-left: 30px;
-    font-family: Rajdhani;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 18px;
-    background-color: #8e918a;
-  }
-  
-  nav .navbar-nav li a{
-    color: white;
-    }
-
-  .navbar a:hover{
-    text-decoration: none;
-    color:rgba(237, 240, 231, 0.89);
-    font-size: 20px;
-    transition: all 1s;
-  } */
   
   /* PORTFOLIO CUBE*/
   #cube-section{
