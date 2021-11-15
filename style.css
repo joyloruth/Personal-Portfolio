@@ -21,6 +21,8 @@
   margin:0;
 }
 
+
+
 /*PRELOADER*/
 #preloader{
   background-color: #222430;
@@ -218,6 +220,7 @@
 
 
 
+
 /*preloader animation keyframes*/
 @keyframes fadeInBalls{
     0% { opacity:   0%;}   
@@ -289,11 +292,24 @@
 
 #top-banner h1{
   font-size: 100px;
-  font-family:  Rajdhani ;
+  font-family:  Permanent Marker ;
   line-height: -10px;
   color: white; 
   text-transform: uppercase;
   letter-spacing: -5px;
+  animation: neonLights .5s 2, neonLights 1.5s, neonLights .1s 4;
+  text-shadow: 0px 3px 10px#b3e9f3;
+}
+
+@keyframes neonLights{
+  100%{
+    text-shadow: 0px 3px 10px#1eb89700;
+    color:rgba(255, 255, 255, 0.158);
+  }
+  0%{
+    text-shadow: 0px 3px 10px#1eb897;
+    color:white;
+  }
 }
 
 #top-banner h2{

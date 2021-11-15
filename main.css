@@ -1,0 +1,134 @@
+*{
+  margin:0px;
+  
+}
+
+#dial-container{
+  width:600px;
+  height:600px;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ;
+}
+
+.dial-item{
+  background-color: blueviolet;
+}
+
+.dial-item:first-child{
+  
+  grid-area: "one";
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  
+}
+
+.dial-item:nth-child(2){
+  
+  grid-area: "two";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dial-item:nth-child(3){
+  
+  grid-area: "three";
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+
+}
+
+.dial-item:nth-child(4){
+  grid-area: "four";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.dial-item:nth-child(5){
+  
+  grid-area: "five";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dial-item:nth-child(6){
+  
+  grid-area: "six";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dial-item:nth-child(7){
+  
+  grid-area: "six";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dial-item:nth-child(8){
+  background-color: #43509c;
+  grid-area: "six";
+ 
+}
+
+.dial-item:nth-child(8){
+  background-color: #43509c;
+  grid-area: "six";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dial{
+  width:50px;
+  height:50px;
+}
+
+#favicon{
+  width:50%;
+  background-color: #222430;
+  
+}
+
+#banner{
+  color:white;
+  background-color: #222430;
+  height:40vh;
+}
+
+#categories{
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.category-container{
+  background-color: blueviolet;
+  width: 33.3%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  flex-direction: column;
+}
+
+#cat-photo{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
